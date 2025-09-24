@@ -1,8 +1,8 @@
-# CoronerMimics
+# Coroner Biodiversity
 
-A plugin which provides integration between Coroner and Siren Head.
+A plugin which provides integration between Coroner and Biodiversity.
 
 ## Credits
 - EliteMasterEric: Creating Coroner & CoronerMimics
-- Ccode: Creating Siren Head in Lethal Company
-- Turkeysteaks: Adapting CoronerMimics for Siren Head
+- Bio-monty / super_fucking_cool_and_badass_team_name: Creating Biodiversity
+- Turkeysteaks: Adapting CoronerMimics for Biodiversity
