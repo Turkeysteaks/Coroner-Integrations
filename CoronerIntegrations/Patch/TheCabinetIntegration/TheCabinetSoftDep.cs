@@ -14,7 +14,7 @@ namespace CoronerIntegrations.Patch.TheCabinetIntegration
             {
                 if (_enabled == null)
                 {
-                    _enabled = BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("SirenHead");
+                    _enabled = BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("VectorV.TheCabinet");
                 }
 
                 return (bool)_enabled;

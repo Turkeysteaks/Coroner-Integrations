@@ -14,7 +14,7 @@ namespace CoronerIntegrations.Patch.SirenHeadIntegration
             {
                 if (_enabled == null)
                 {
-                    _enabled = BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("SirenHead");
+                    _enabled = BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("Ccode.SirenHead");
                 }
 
                 return (bool)_enabled;
