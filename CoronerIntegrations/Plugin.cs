@@ -10,6 +10,7 @@ using CoronerIntegrations.Patch.BiodiversityIntegration.Critters;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Ogopogo;
 using CoronerIntegrations.Patch.ScopophobiaIntegration;
 using CoronerIntegrations.Patch.SirenHeadIntegration;
+using CoronerIntegrations.Patch.TheCabinetIntegration;
 
 namespace CoronerIntegrations
 {
@@ -70,6 +71,14 @@ namespace CoronerIntegrations
                 harmony.PatchAll(typeof(SirenHeadEatPlayerPatch));
                 
                 SirenHeadSoftDep.CoronerRegister();
+            }
+            
+            PluginLogger.LogInfo($"The Cabinet Found: {TheCabinetSoftDep.enabled}");
+            if (TheCabinetSoftDep.enabled)
+            {
+                harmony.PatchAll(typeof(KillPlayerPatch));
+                
+                TheCabinetSoftDep.CoronerRegister();
             }
         }
     }
