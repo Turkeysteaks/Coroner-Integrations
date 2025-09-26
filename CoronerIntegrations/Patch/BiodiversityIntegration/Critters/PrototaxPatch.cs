@@ -2,7 +2,7 @@ using System;
 using GameNetcodeStuff;
 using HarmonyLib;
 
-namespace CoronerBiodiversity.Patch.Critters
+namespace CoronerIntegrations.Patch.BiodiversityIntegration.Critters
 {
     [HarmonyPatch(typeof(Biodiversity.Behaviours.DamageTrigger))]
     [HarmonyPatch("Update")]
@@ -32,7 +32,7 @@ namespace CoronerBiodiversity.Patch.Critters
 			
             if (player.isPlayerDead) {
                 Plugin.Instance.PluginLogger.LogDebug($"Player {player.playerClientId} was poisoned by a Prototax! Setting cause of death...");
-                Coroner.API.SetCauseOfDeath(player, Plugin.Instance.PROTOTAX);
+                Coroner.API.SetCauseOfDeath(player, BiodiversitySoftDep.PROTOTAX);
             }
         }
     }

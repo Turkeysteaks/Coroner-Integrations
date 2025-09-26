@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using GameNetcodeStuff;
 using HarmonyLib;
-using UnityEngine;
 
-namespace CoronerBiodiversity.Patch.Ogopogo
+namespace CoronerIntegrations.Patch.BiodiversityIntegration.Ogopogo
 {
     [HarmonyPatch(typeof(Biodiversity.Creatures.Ogopogo.OgopogoAI))]
     [HarmonyPatch("SetPlayerGrabbedClientRpc")] //SetPlayerGrabbedClientRpc(int playerID, bool setNull = false, bool resetSpecialPlayer = true)
@@ -40,7 +39,7 @@ namespace CoronerBiodiversity.Patch.Ogopogo
             if (__instance.isPlayerDead && OgopogoPatch.playersGrabbed.Contains(__instance))
             {
                 Plugin.Instance.PluginLogger.LogDebug($"Player {__instance.playerClientId} was thrown to their death by the Ogopogo! Setting cause of death...");
-                Coroner.API.SetCauseOfDeath(__instance, Plugin.Instance.OGOPOGO_GRAVITY);
+                Coroner.API.SetCauseOfDeath(__instance, BiodiversitySoftDep.OGOPOGO_GRAVITY);
             }
         }
     }
@@ -54,7 +53,7 @@ namespace CoronerBiodiversity.Patch.Ogopogo
             if (__instance.isPlayerDead && OgopogoPatch.playersGrabbed.Contains(__instance))
             {
                 Plugin.Instance.PluginLogger.LogDebug($"Player {__instance.playerClientId} was drowned by the Ogopogo! Setting cause of death...");
-                Coroner.API.SetCauseOfDeath(__instance, Plugin.Instance.OGOPOGO_DROWNING);
+                Coroner.API.SetCauseOfDeath(__instance, BiodiversitySoftDep.OGOPOGO_DROWNING);
             }
         }
     }

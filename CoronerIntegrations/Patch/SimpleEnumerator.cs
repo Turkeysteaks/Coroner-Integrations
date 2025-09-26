@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 
-namespace CoronerBiodiversity.Patch.Aloe;
+namespace CoronerIntegrations.Patch;
 
 public class SimpleEnumerator : IEnumerable
 {

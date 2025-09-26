@@ -2,7 +2,7 @@ using GameNetcodeStuff;
 using HarmonyLib;
 using UnityEngine;
 
-namespace CoronerBiodiversity.Patch.Ogopogo
+namespace CoronerIntegrations.Patch.BiodiversityIntegration.Ogopogo
 {
     [HarmonyPatch(typeof(Biodiversity.Creatures.Ogopogo.VerminAI))]
     [HarmonyPatch("OnCollideWithPlayer")]
@@ -28,7 +28,7 @@ namespace CoronerBiodiversity.Patch.Ogopogo
             if (player.isPlayerDead)
             {
                 Plugin.Instance.PluginLogger.LogDebug($"Player {player.playerClientId} was eaten by Vermin! Setting cause of death...");
-                Coroner.API.SetCauseOfDeath(player, Plugin.Instance.VERMIN);
+                Coroner.API.SetCauseOfDeath(player, BiodiversitySoftDep.VERMIN);
             }
         }
     }

@@ -4,20 +4,20 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     
     <Company>Turkeysteaks</Company>
-    <AssemblyName>Coroner - Biodiversity</AssemblyName>
-    <GUID>Turkeysteaks.coroner.biodiversity</GUID>
+    <AssemblyName>Coroner - Integrations</AssemblyName>
+    <GUID>Turkeysteaks.coroner.integrations</GUID>
     <Version>1.0.0</Version>
 
-    <Title>Coroner - Biodiversity</Title>
-    <Description>Provides integration between Coroner and Biodiversity.</Description>
+    <Title>Coroner - Integrations</Title>
+    <Description>Provides integration between Coroner and many mods.</Description>
 
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <Nullable>enable</Nullable>
-    <PackageId>Coroner - Biodiversity</PackageId>
-    <Authors>Coroner - Biodiversity</Authors>
-    <Product>Coroner - Biodiversity</Product>
+    <PackageId>Coroner - Integrations</PackageId>
+    <Authors>Coroner - Integrations</Authors>
+    <Product>Coroner - Integrations</Product>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
+    <Reference Include="Assembly-CSharp">   
       <Private>false</Private>
       <HintPath>..\include\Assembly-CSharp.dll</HintPath>
     </Reference>
@@ -44,12 +44,25 @@
         <Publicize>true</Publicize>
     </Reference>
       
-    <Reference Include="Biodiversity">
-      <Private>false</Private>
-      <HintPath>..\include\com.github.biodiversitylc.Biodiversity.dll</HintPath>
-        <Publicize>true</Publicize>
-    </Reference>
-<!--      <Publicize Include="Biodiversity:Biodiversity.Creatures.Ogopogo.VerminAI"/>-->
+        <Reference Include="Biodiversity">
+          <Private>false</Private>
+          <HintPath>..\include\com.github.biodiversitylc.Biodiversity.dll</HintPath>
+            <Publicize>true</Publicize>
+        </Reference>
+          <Reference Include="Scopophobia">
+              <Private>false</Private>
+              <HintPath>..\include\Scopophobia.dll</HintPath>
+          </Reference>
+      <Reference Include="LethalSirenHead">
+          <Private>false</Private>
+          <HintPath>..\include\LethalSirenHead.dll</HintPath>
+      </Reference>
+      <Reference Include="TheCabinet">
+          <Private>false</Private>
+          <HintPath>..\include\VectorV.TheCabinet.dll</HintPath>
+      </Reference>
+          
+      
     <Reference Include="DissonanceVoip">
       <Private>false</Private>
       <HintPath>..\include\DissonanceVoip.dll</HintPath>

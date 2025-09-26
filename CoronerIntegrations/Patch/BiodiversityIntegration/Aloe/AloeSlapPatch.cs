@@ -1,9 +1,7 @@
-using System;
-using System.Collections;
+using CoronerIntegrations.Patch.BiodiversityIntegration;
 using HarmonyLib;
-using Biodiversity;
 
-namespace CoronerBiodiversity.Patch.Aloe {
+namespace CoronerIntegrations.Patch.BiodiversityIntegration.Aloe {
     [HarmonyPatch(typeof(Biodiversity.Creatures.Aloe.SlapCollisionDetection))]
     [HarmonyPatch("SlapPlayerServerRpc")]
     class AloeSlapPatch {
@@ -25,7 +23,7 @@ namespace CoronerBiodiversity.Patch.Aloe {
 			
             if (player.isPlayerDead) {
 				Plugin.Instance.PluginLogger.LogDebug($"Player {playerId} was slapped to death by The Aloe! Setting cause of death...");
-				Coroner.API.SetCauseOfDeath(player, Plugin.Instance.ALOE_SLAP);
+				Coroner.API.SetCauseOfDeath(player, BiodiversitySoftDep.ALOE_SLAP);
             }
         }
     }

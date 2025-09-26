@@ -1,9 +1,7 @@
-using System;
-using System.Collections;
+using CoronerIntegrations.Patch.BiodiversityIntegration;
 using HarmonyLib;
-using Biodiversity;
 
-namespace CoronerBiodiversity.Patch.Aloe {
+namespace CoronerIntegrations.Patch.BiodiversityIntegration.Aloe {
     [HarmonyPatch(typeof(Biodiversity.Creatures.Aloe.AloeClient))]
     [HarmonyPatch("HandleDamagePlayer")]
     class AloeBludgeonPatch {
@@ -24,7 +22,7 @@ namespace CoronerBiodiversity.Patch.Aloe {
 			
             if (player.isPlayerDead) {
 				Plugin.Instance.PluginLogger.LogDebug($"Player {playerId} was bludgeoned to death by The Aloe! Setting cause of death...");
-				Coroner.API.SetCauseOfDeath(player, Plugin.Instance.ALOE_BLUDGEON);
+				Coroner.API.SetCauseOfDeath(player, BiodiversitySoftDep.ALOE_BLUDGEON);
             }
         }
     }

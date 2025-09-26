@@ -1,11 +1,10 @@
 {
-  "name": "CoronerBiodiversity",
+  "name": "CoronerIntegrations",
   "version_number": "0.0.0",
-  "website_url": "https://github.com/Turkeysteaks/Coroner-biodiversity",
-  "description": "Provides integration between Coroner and Biodiversity.",
+  "website_url": "https://github.com/Turkeysteaks/Coroner-Integrations",
+  "description": "Provides integration between Coroner and many mods.",
   "dependencies": [
     "BepInEx-BepInExPack-5.4.2100",
-    "EliteMasterEric-Coroner-2.3.0",
-    "super_fucking_cool_and_badass_team-Biodiversity-0.2.6"
+    "EliteMasterEric-Coroner-2.3.0"
   ]
 }

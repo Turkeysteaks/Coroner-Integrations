@@ -1,7 +1,7 @@
 using GameNetcodeStuff;
 using HarmonyLib;
 
-namespace CoronerBiodiversity.Patch.Critters
+namespace CoronerIntegrations.Patch.BiodiversityIntegration.Critters
 {
     [HarmonyPatch(typeof(Coroner.Patch.LandmineSpawnExplosionPatch))]
     [HarmonyPatch("RewriteCauseOfDeath")]
@@ -16,7 +16,7 @@ namespace CoronerBiodiversity.Patch.Critters
                     Plugin.Instance.PluginLogger.LogDebug(
                         $"Player {targetPlayer.playerClientId} was blown up by a CoilCrab! Setting cause of death...");
                     Coroner.API.SetCauseOfDeath(targetPlayer, null);
-                    Coroner.API.SetCauseOfDeath(targetPlayer, Plugin.Instance.COILCRAB_EXPLODE);
+                    Coroner.API.SetCauseOfDeath(targetPlayer, BiodiversitySoftDep.COILCRAB_EXPLODE);
                 }
             }
             catch (System.Exception e)

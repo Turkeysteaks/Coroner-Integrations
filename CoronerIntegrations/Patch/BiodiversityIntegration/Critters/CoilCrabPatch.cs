@@ -3,7 +3,7 @@ using GameNetcodeStuff;
 using HarmonyLib;
 using UnityEngine;
 
-namespace CoronerBiodiversity.Patch.Critters
+namespace CoronerIntegrations.Patch.BiodiversityIntegration.Critters
 {
 
     [HarmonyPatch(typeof(Biodiversity.Creatures.CoilCrab.CoilCrabAI))]

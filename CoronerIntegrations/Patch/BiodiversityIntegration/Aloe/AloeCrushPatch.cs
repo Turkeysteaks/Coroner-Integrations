@@ -1,10 +1,9 @@
 using System;
 using System.Collections;
-using HarmonyLib;
-using Biodiversity;
 using GameNetcodeStuff;
+using HarmonyLib;
 
-namespace CoronerBiodiversity.Patch.Aloe {
+namespace CoronerIntegrations.Patch.BiodiversityIntegration.Aloe {
     [HarmonyPatch(typeof(Biodiversity.Creatures.Aloe.AloeClient))]
     [HarmonyPatch("CrushPlayerAnimation")]
     class AloeCrushPatch {
@@ -44,29 +43,8 @@ namespace CoronerBiodiversity.Patch.Aloe {
 			
             // if (player.isPlayerDead) {
 				Plugin.Instance.PluginLogger.LogDebug($"Player {player.playerClientId} was crushed by The Aloe! Setting cause of death...");
-				Coroner.API.SetCauseOfDeath(player, Plugin.Instance.ALOE_CRUSH);
+				Coroner.API.SetCauseOfDeath(player, BiodiversitySoftDep.ALOE_CRUSH);
             // }
         }
     }
-
- //    class SimpleEnumerator : IEnumerable
-	// {
-	// 	public IEnumerator enumerator;
-	// 	public Action prefixAction, postfixAction;
-	// 	public Action<object> preItemAction, postItemAction;
-	// 	public Func<object, object> itemAction;
-	// 	IEnumerator IEnumerable.GetEnumerator() { return GetEnumerator(); }
-	// 	public IEnumerator GetEnumerator()
-	// 	{
-	// 		prefixAction();
-	// 		while (enumerator.MoveNext())
-	// 		{
-	// 			var item = enumerator.Current;
-	// 			preItemAction(item);
-	// 			yield return itemAction(item);
-	// 			postItemAction(item);
-	// 		}
-	// 		postfixAction();
-	// 	}
-	// }
 }
