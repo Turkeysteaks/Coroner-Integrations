@@ -8,6 +8,7 @@ using CoronerIntegrations.Patch.BiodiversityIntegration;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Aloe;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Critters;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Ogopogo;
+using CoronerIntegrations.Patch.LockerIntegration;
 using CoronerIntegrations.Patch.ScopophobiaIntegration;
 using CoronerIntegrations.Patch.SirenHeadIntegration;
 using CoronerIntegrations.Patch.TheCabinetIntegration;
@@ -76,9 +77,17 @@ namespace CoronerIntegrations
             PluginLogger.LogInfo($"The Cabinet Found: {TheCabinetSoftDep.enabled}");
             if (TheCabinetSoftDep.enabled)
             {
-                harmony.PatchAll(typeof(KillPlayerPatch));
+                harmony.PatchAll(typeof(Patch.TheCabinetIntegration.KillPlayerPatch));
                 
                 TheCabinetSoftDep.CoronerRegister();
+            }
+            
+            PluginLogger.LogInfo($"Locker Found: {LockerSoftDep.enabled}");
+            if (LockerSoftDep.enabled)
+            {
+                harmony.PatchAll(typeof(Patch.LockerIntegration.KillPlayerPatch));
+                harmony.PatchAll(typeof(ExplodePatch));
+                LockerSoftDep.CoronerRegister();
             }
         }
     }

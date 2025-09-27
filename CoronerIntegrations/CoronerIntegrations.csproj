@@ -61,6 +61,11 @@
           <Private>false</Private>
           <HintPath>..\include\VectorV.TheCabinet.dll</HintPath>
       </Reference>
+      <Reference Include="Locker">
+          <Private>false</Private>
+          <HintPath>..\include\Locker.dll</HintPath>
+          <Publicize>true</Publicize>
+      </Reference>
           
       
     <Reference Include="DissonanceVoip">
