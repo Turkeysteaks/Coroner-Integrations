@@ -7,35 +7,27 @@ namespace CoronerIntegrations.Patch.SirenHeadIntegration {
 
     [HarmonyPatch(typeof(SirenHeadAI))]
     [HarmonyPatch("EatPlayer")]
-    class SirenHeadEatPlayerPatch {
+    class SirenHeadEatPlayerPatch
+    {
+	    private static ulong playerID;
         public static void Postfix(SirenHeadAI __instance, ulong player, ref IEnumerator __result) {
-            try {
-		        Action prefixAction = () => { Console.WriteLine("--> beginning"); };
-		        Action postfixAction = () => { HandleSirenHeadKill(player); };
-		        Action<object> preItemAction = (item) => { Console.WriteLine($"--> before {item}"); };
-		        Action<object> postItemAction = (item) => { Console.WriteLine($"--> after {item}"); };
-		        Func<object, object> itemAction = (item) =>
-		        {
-		        	var newItem = item + "+";
-		        	Console.WriteLine($"--> item {item} => {newItem}");
-		        	return newItem;
-		        };
-		        var myEnumerator = new SimpleEnumerator()
-		        {
-		        	enumerator = __result,
-		        	prefixAction = prefixAction,
-		        	postfixAction = postfixAction,
-		        	preItemAction = preItemAction,
-		        	postItemAction = postItemAction,
-		        	itemAction = itemAction
-		        };
-		        __result = myEnumerator.GetEnumerator();
-            }
-            catch (System.Exception e)
-            {
-                Plugin.Instance.PluginLogger.LogError("Error in SirenHeadEatPlayerPatch.Postfix: " + e);
-                Plugin.Instance.PluginLogger.LogError(e.StackTrace);
-            }
+	        playerID = player;
+        }
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(SirenHeadAI), "EatPlayer", MethodType.Enumerator)]
+        static void Postfix_MoveNext(bool __result)
+        {
+	        try
+	        {
+		        if (__result)
+			        return;
+		        HandleSirenHeadKill(playerID);
+	        }
+	        catch (System.Exception e)
+	        {
+		        Plugin.Instance.PluginLogger.LogError("Error in SirenHeadEatPlayerPatch: " + e);
+		        Plugin.Instance.PluginLogger.LogError(e.StackTrace);
+	        }
         }
 
         private static void HandleSirenHeadKill(ulong playerId) {
@@ -45,6 +37,7 @@ namespace CoronerIntegrations.Patch.SirenHeadIntegration {
             // if (player.isPlayerDead && player.causeOfDeath == CauseOfDeath.Unknown) {
             Plugin.Instance.PluginLogger.LogDebug($"Player {playerId} was killed by Siren Head! Setting cause of death...");
             Coroner.API.SetCauseOfDeath(player, SirenHeadSoftDep.SIREN_HEAD);
+            playerID = 100000;
             // }
         }
     }
