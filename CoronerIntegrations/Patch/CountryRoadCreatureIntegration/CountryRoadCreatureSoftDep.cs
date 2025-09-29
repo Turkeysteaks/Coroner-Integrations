@@ -23,7 +23,7 @@ public class CountryRoadCreatureSoftDep
     //
     public static string COUNTRYROAD_KEY = "DeathEnemyCountryRoadCreature"; //
     public static AdvancedCauseOfDeath COUNTRYROAD;
-    public static string COUNTRYROAD_PARANOIA_KEY = "DeathEnemyCountryRoadCreature"; //
+    public static string COUNTRYROAD_PARANOIA_KEY = "DeathEnemyCountryRoadCreatureHead"; //
     public static AdvancedCauseOfDeath COUNTRYROAD_PARANOIA;
     
 
