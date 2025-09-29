@@ -70,6 +70,12 @@
           <Private>false</Private>
           <HintPath>..\include\CountryRoadCreature.dll</HintPath>
       </Reference>
+
+      <Reference Include="UsualScrap">
+          <Private>false</Private>
+          <HintPath>..\include\UsualScrap.dll</HintPath>
+          <Publicize>true</Publicize>
+      </Reference>
           
       
     <Reference Include="DissonanceVoip">

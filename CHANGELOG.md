@@ -2,7 +2,7 @@
 ## 0.2.0
 - Integration with:
   - wexop's CountryRoadCreature (based on the trevor henderson creature of the same name)
-
+  - etherealemil's UsualScrap (90% done, but will need some more death messages)
 ## 0.1.1
 - Fix bug causing SirenHead to instantly kill (instead of animate eating the player)
 

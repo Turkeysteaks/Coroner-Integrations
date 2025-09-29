@@ -13,6 +13,7 @@ using CoronerIntegrations.Patch.LockerIntegration;
 using CoronerIntegrations.Patch.ScopophobiaIntegration;
 using CoronerIntegrations.Patch.SirenHeadIntegration;
 using CoronerIntegrations.Patch.TheCabinetIntegration;
+using CoronerIntegrations.Patch.UsualScrapIntegration;
 
 namespace CoronerIntegrations
 {
@@ -103,6 +104,20 @@ namespace CoronerIntegrations
                 harmony.PatchAll(typeof(GrabAnimationPatch));
                 harmony.PatchAll(typeof(ParanoidAnimationPatch));
                 CountryRoadCreatureSoftDep.CoronerRegister();
+            }
+            
+            PluginLogger.LogInfo($"UsualScrap Found: {UsualScrapSoftDep.enabled}");
+            if (UsualScrapSoftDep.enabled)
+            {
+                harmony.PatchAll(typeof(RosePatchEquip));
+                harmony.PatchAll(typeof(RosePatchPocket));
+                
+                harmony.PatchAll(typeof(ScissorPatch));
+                
+                harmony.PatchAll(typeof(RadioactiveCellPatch));
+                
+                harmony.PatchAll(typeof(EmergencyInjectorPatch));
+                UsualScrapSoftDep.CoronerRegister();
             }
         }
     }

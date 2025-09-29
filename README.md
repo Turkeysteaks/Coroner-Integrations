@@ -11,6 +11,7 @@ This mod will automatically detect if you have the relevant mods installed and i
 - VectorV's [The Cabinet](https://thunderstore.io/c/lethal-company/p/Cabinet_crew/TheCabinet/) [[Standalone integration](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerTheCabinet/)]
 - Zeal's [Locker](https://thunderstore.io/c/lethal-company/p/zealsprince/Locker/) [No standalone yet]
 - wexop's [CountryRoadCreature](https://thunderstore.io/c/lethal-company/p/Wexop/CountryRoadCreature/) [No standalone yet]
+- etherealemil's [UsualScrap](https://thunderstore.io/c/lethal-company/p/etherealemil/UsualScrap/) [No standalone yet] - 90% done, but needs more deathmessages
 
 Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-company/p/EliteMasterEric/CoronerMimics/) [[Standalone fix](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerMimicsFixEnUS/)]
 
@@ -25,7 +26,7 @@ Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-co
 - LethalAnomalies
 - LegendWeathers
 - Generic Scrap
-- Usual scrap
+- ~~Usual scrap~~
 - HeavyItemsSCP
 - Moonswept
 - Football
