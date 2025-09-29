@@ -8,6 +8,7 @@ using CoronerIntegrations.Patch.BiodiversityIntegration;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Aloe;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Critters;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Ogopogo;
+using CoronerIntegrations.Patch.CountryRoadCreatureIntegration;
 using CoronerIntegrations.Patch.LockerIntegration;
 using CoronerIntegrations.Patch.ScopophobiaIntegration;
 using CoronerIntegrations.Patch.SirenHeadIntegration;
@@ -24,6 +25,12 @@ namespace CoronerIntegrations
     }
 
     [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
+    [BepInDependency("com.github.biodiversitylc.Biodiversity", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("wexop.country_road_creature", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("com.zealsprince.locker", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("Scopophobia", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("Ccode.SirenHead", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("VectorV.TheCabinet", BepInDependency.DependencyFlags.SoftDependency)]
     public class Plugin : BaseUnityPlugin
     {
         public static Plugin Instance { get; private set; }
@@ -88,6 +95,14 @@ namespace CoronerIntegrations
                 harmony.PatchAll(typeof(Patch.LockerIntegration.KillPlayerPatch));
                 harmony.PatchAll(typeof(ExplodePatch));
                 LockerSoftDep.CoronerRegister();
+            }
+
+            PluginLogger.LogInfo($"CountryRoadCreature Found: {CountryRoadCreatureSoftDep.enabled}");
+            if (CountryRoadCreatureSoftDep.enabled)
+            {
+                harmony.PatchAll(typeof(GrabAnimationPatch));
+                harmony.PatchAll(typeof(ParanoidAnimationPatch));
+                CountryRoadCreatureSoftDep.CoronerRegister();
             }
         }
     }

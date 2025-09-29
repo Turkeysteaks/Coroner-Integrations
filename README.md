@@ -10,6 +10,7 @@ This mod will automatically detect if you have the relevant mods installed and i
 - theunknowncod3r's [Scopophobia](https://thunderstore.io/c/lethal-company/p/theunknowncod3r/Scopophobia/) (aka Shy Guy / SCP-096) [[Standalone integration](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerScopophobia/)]
 - VectorV's [The Cabinet](https://thunderstore.io/c/lethal-company/p/Cabinet_crew/TheCabinet/) [[Standalone integration](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerTheCabinet/)]
 - Zeal's [Locker](https://thunderstore.io/c/lethal-company/p/zealsprince/Locker/) [No standalone yet]
+- wexop's [CountryRoadCreature](https://thunderstore.io/c/lethal-company/p/Wexop/CountryRoadCreature/) [No standalone yet]
 
 Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-company/p/EliteMasterEric/CoronerMimics/) [[Standalone fix](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerMimicsFixEnUS/)]
 
@@ -19,12 +20,18 @@ Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-co
 - Herobrine (Likely next)
 - MissileTurret
 - LethalElementsBeta
-- CountryRoadCreature
+- ~~CountryRoadCreature~~
 - Rolling Giant
 - LethalAnomalies
 - LegendWeathers
 - Generic Scrap
 - Usual scrap
+- HeavyItemsSCP
+- Moonswept
+- Football
+- Slenderman
+- Tartarus
+- Surfaced
 
 If you have any other requests or suggestions for integrations, please let me know on the [discord](https://discord.com/channels/1168655651455639582/1419015562880876645) (part of Lethal Company Modding)
 

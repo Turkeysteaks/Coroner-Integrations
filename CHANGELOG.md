@@ -1,4 +1,11 @@
 # Changelog
+## 0.2.0
+- Integration with:
+  - wexop's CountryRoadCreature (based on the trevor henderson creature of the same name)
+
+## 0.1.1
+- Fix bug causing SirenHead to instantly kill (instead of animate eating the player)
+
 ## 0.1.0
 - Integration with:
   - Zeal's [Locker](https://thunderstore.io/c/lethal-company/p/zealsprince/Locker/)

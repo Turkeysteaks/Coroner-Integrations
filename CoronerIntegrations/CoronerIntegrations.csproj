@@ -66,6 +66,10 @@
           <HintPath>..\include\Locker.dll</HintPath>
           <Publicize>true</Publicize>
       </Reference>
+      <Reference Include="CountryRoadCreature">
+          <Private>false</Private>
+          <HintPath>..\include\CountryRoadCreature.dll</HintPath>
+      </Reference>
           
       
     <Reference Include="DissonanceVoip">
