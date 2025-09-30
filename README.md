@@ -13,12 +13,13 @@ This mod will automatically detect if you have the relevant mods installed and i
 - wexop's [CountryRoadCreature](https://thunderstore.io/c/lethal-company/p/Wexop/CountryRoadCreature/) [No standalone yet]
 - etherealemil's [UsualScrap](https://thunderstore.io/c/lethal-company/p/etherealemil/UsualScrap/) [No standalone yet] - 90% done, but needs more deathmessages
 - NomnomAB's [Rolling Giant](https://thunderstore.io/c/lethal-company/p/NomnomAB/RollingGiant/)
+- SolidStone's [ShockwaveDroneEnemy](https://thunderstore.io/c/lethal-company/p/SolidStone/ShockwaveDroneEnemy/)
 
 Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-company/p/EliteMasterEric/CoronerMimics/) [[Standalone fix](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerMimicsFixEnUS/)]
 
 ### Planned:
 - CodeRebirth
-- ShockwaveDrone
+- ~~ShockwaveDrone~~
 - Herobrine (Likely next)
 - MissileTurret
 - LethalElementsBeta

@@ -2,6 +2,7 @@
 ## 0.3.0
 - Integration with:
   - NomnomAB's [Rolling Giant](https://thunderstore.io/c/lethal-company/p/NomnomAB/RollingGiant/)
+  - SolidStone's [ShockwaveDroneEnemy](https://thunderstore.io/c/lethal-company/p/SolidStone/ShockwaveDroneEnemy/)
 
 ## 0.2.0
 - Integration with:
