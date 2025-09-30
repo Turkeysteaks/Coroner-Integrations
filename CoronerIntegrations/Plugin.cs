@@ -10,7 +10,9 @@ using CoronerIntegrations.Patch.BiodiversityIntegration.Critters;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Ogopogo;
 using CoronerIntegrations.Patch.CountryRoadCreatureIntegration;
 using CoronerIntegrations.Patch.LockerIntegration;
+using CoronerIntegrations.Patch.RollingGiantIntegration;
 using CoronerIntegrations.Patch.ScopophobiaIntegration;
+using CoronerIntegrations.Patch.ShockwaveDroneIntegration;
 using CoronerIntegrations.Patch.SirenHeadIntegration;
 using CoronerIntegrations.Patch.TheCabinetIntegration;
 using CoronerIntegrations.Patch.UsualScrapIntegration;
@@ -32,6 +34,9 @@ namespace CoronerIntegrations
     [BepInDependency("Scopophobia", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("Ccode.SirenHead", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("VectorV.TheCabinet", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("Emil.UsualScrap", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("nomnomab.rollinggiant", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("droneenemy", BepInDependency.DependencyFlags.SoftDependency)]
     public class Plugin : BaseUnityPlugin
     {
         public static Plugin Instance { get; private set; }
@@ -104,6 +109,21 @@ namespace CoronerIntegrations
                 harmony.PatchAll(typeof(GrabAnimationPatch));
                 harmony.PatchAll(typeof(ParanoidAnimationPatch));
                 CountryRoadCreatureSoftDep.CoronerRegister();
+            }
+            
+            PluginLogger.LogInfo($"RollingGiant Found: {RollingGiantSoftDep.enabled}");
+            if (RollingGiantSoftDep.enabled)
+            {
+                harmony.PatchAll(typeof(OnCollideWithPlayerPatch));
+                RollingGiantSoftDep.CoronerRegister();
+            }
+            
+            PluginLogger.LogInfo($"ShockwaveDrone Found: {ShockwaveDroneSoftDep.enabled}");
+            if (ShockwaveDroneSoftDep.enabled)
+            {
+                harmony.PatchAll(typeof(ShockScanPatch));
+                harmony.PatchAll(typeof(ShockCreateExplosionPatch));
+                ShockwaveDroneSoftDep.CoronerRegister();
             }
             
             PluginLogger.LogInfo($"UsualScrap Found: {UsualScrapSoftDep.enabled}");

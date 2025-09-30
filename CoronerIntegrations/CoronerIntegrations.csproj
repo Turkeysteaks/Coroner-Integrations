@@ -71,6 +71,17 @@
           <HintPath>..\include\CountryRoadCreature.dll</HintPath>
       </Reference>
 
+      <Reference Include="RollingGiant">
+          <Private>false</Private>
+          <HintPath>..\include\RollingGiant.dll</HintPath>
+      </Reference>
+
+      <Reference Include="DroneEnemy">
+          <Private>false</Private>
+          <HintPath>..\include\DroneEnemy.dll</HintPath>
+          <Publicize>true</Publicize>
+      </Reference>
+
       <Reference Include="UsualScrap">
           <Private>false</Private>
           <HintPath>..\include\UsualScrap.dll</HintPath>

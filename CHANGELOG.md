@@ -1,4 +1,8 @@
 # Changelog
+## 0.3.0
+- Integration with:
+  - NomnomAB's [Rolling Giant](https://thunderstore.io/c/lethal-company/p/NomnomAB/RollingGiant/)
+
 ## 0.2.0
 - Integration with:
   - wexop's CountryRoadCreature (based on the trevor henderson creature of the same name)
