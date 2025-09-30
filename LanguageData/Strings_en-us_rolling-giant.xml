@@ -19,9 +19,12 @@
         <!-- TN: Killed by The Rolling Giant. -->
         <DeathEnemyRollingGiant text="Killed by the Rolling Giant." />
         <DeathEnemyRollingGiant text="Stalked by the Rolling Giant." />
-        <DeathEnemyRollingGiant text="Spent too much time in Valley View Mall." />
+        <DeathEnemyRollingGiant text="Spent too much time in Valley View Mall." /> <!-- TN: Reference to The Oldest View -->
         <DeathEnemyRollingGiant text="Couldn't outrun the Rolling Giant." />
-        <DeathEnemyRollingGiant text="Caught Dallas nostalgia." />
-        <DeathEnemyRollingGiant text="Never made it out of the mall." />
+        <DeathEnemyRollingGiant text="Couldn't outroll the Rolling Giant." />
+        <DeathEnemyRollingGiant text="Caught Dallas nostalgia." /> <!-- TN: Reference to The Oldest View -->
+        <DeathEnemyRollingGiant text="Never made it out of the mall." /> <!-- TN: Reference to The Oldest View -->
+        <DeathEnemyRollingGiant text="Steamrolled by the Rolling Giant." />
+
     </strings>
 </base>
