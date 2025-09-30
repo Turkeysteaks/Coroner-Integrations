@@ -17,6 +17,11 @@
         -->
 
         <!-- TN: Killed by The Rolling Giant. -->
-        <DeathEnemyRollingGiant text="Killed by The Rolling Giant." />
+        <DeathEnemyRollingGiant text="Killed by the Rolling Giant." />
+        <DeathEnemyRollingGiant text="Stalked by the Rolling Giant." />
+        <DeathEnemyRollingGiant text="Spent too much time in Valley View Mall." />
+        <DeathEnemyRollingGiant text="Couldn't outrun the Rolling Giant." />
+        <DeathEnemyRollingGiant text="Caught Dallas nostalgia." />
+        <DeathEnemyRollingGiant text="Never made it out of the mall." />
     </strings>
 </base>
