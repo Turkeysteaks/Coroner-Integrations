@@ -3,7 +3,7 @@ using HarmonyLib;
 
 namespace CoronerIntegrations.Patch.UsualScrapIntegration
 {
-
+    //TODO: Add support for killing other players with it
     [HarmonyPatch(typeof(UsualScrap.Behaviors.ScissorsScript))]
     [HarmonyPatch("RollForDamage")]
     public class ScissorPatch
