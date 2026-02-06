@@ -53,6 +53,11 @@
               <Private>false</Private>
               <HintPath>..\include\Scopophobia.dll</HintPath>
           </Reference>
+    <Reference Include="Lethal_Doors">
+      <Private>false</Private>
+      <HintPath>..\include\Lethal_Doors.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
       <Reference Include="LethalSirenHead">
           <Private>false</Private>
           <HintPath>..\include\LethalSirenHead.dll</HintPath>

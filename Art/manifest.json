@@ -1,10 +1,10 @@
 {
   "name": "CoronerIntegrations",
-  "version_number": "0.3.0",
+  "version_number": "0.4.0",
   "website_url": "https://github.com/Turkeysteaks/Coroner-Integrations",
   "description": "Provides integration between Coroner and many mods. See the README for the full list!",
   "dependencies": [
-    "BepInEx-BepInExPack-5.4.2100",
+    "BepInEx-BepInExPack-5.4.2304",
     "EliteMasterEric-Coroner-2.3.0"
   ]
 }

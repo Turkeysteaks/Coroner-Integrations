@@ -9,6 +9,7 @@ using CoronerIntegrations.Patch.BiodiversityIntegration.Aloe;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Critters;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Ogopogo;
 using CoronerIntegrations.Patch.CountryRoadCreatureIntegration;
+using CoronerIntegrations.Patch.LethalDoorsFixedIntegration;
 using CoronerIntegrations.Patch.LockerIntegration;
 using CoronerIntegrations.Patch.RollingGiantIntegration;
 using CoronerIntegrations.Patch.ScopophobiaIntegration;
@@ -37,6 +38,7 @@ namespace CoronerIntegrations
     [BepInDependency("Emil.UsualScrap", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("nomnomab.rollinggiant", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("droneenemy", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("Entity378.LethalDoorsFixed", BepInDependency.DependencyFlags.SoftDependency)]
     public class Plugin : BaseUnityPlugin
     {
         public static Plugin Instance { get; private set; }
@@ -111,6 +113,13 @@ namespace CoronerIntegrations
                 CountryRoadCreatureSoftDep.CoronerRegister();
             }
             
+            PluginLogger.LogInfo($"LethalDoorsFixed Found: {LethalDoorsFixedSoftDep.enabled}");
+            if (LethalDoorsFixedSoftDep.enabled)
+            {
+                harmony.PatchAll(typeof(DoorInteractionPatch));
+                LethalDoorsFixedSoftDep.CoronerRegister();
+            }
+            
             PluginLogger.LogInfo($"RollingGiant Found: {RollingGiantSoftDep.enabled}");
             if (RollingGiantSoftDep.enabled)
             {
@@ -136,7 +145,7 @@ namespace CoronerIntegrations
                 
                 harmony.PatchAll(typeof(RadioactiveCellPatch));
                 
-                harmony.PatchAll(typeof(EmergencyInjectorPatch));
+                
                 UsualScrapSoftDep.CoronerRegister();
             }
         }

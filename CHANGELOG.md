@@ -1,4 +1,14 @@
 # Changelog
+## 0.4.0
+- Updated BepInEx dependency.
+- Integration with:
+  - Entity378's [LethalDoorsFixed](https://thunderstore.io/c/lethal-company/p/Entity378/Lethal_Doors_Fixed/)
+
+## 0.3.1
+- Fix error occuring with UsualScrap due to injector changes
+- TODO:
+    - Update for BloodyCapsule and NoxiousCapsule functionality.
+
 ## 0.3.0
 - Integration with:
   - NomnomAB's [Rolling Giant](https://thunderstore.io/c/lethal-company/p/NomnomAB/RollingGiant/)

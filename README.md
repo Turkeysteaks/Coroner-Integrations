@@ -11,9 +11,10 @@ This mod will automatically detect if you have the relevant mods installed and i
 - VectorV's [The Cabinet](https://thunderstore.io/c/lethal-company/p/Cabinet_crew/TheCabinet/) [[Standalone integration](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerTheCabinet/)]
 - Zeal's [Locker](https://thunderstore.io/c/lethal-company/p/zealsprince/Locker/) [No standalone yet]
 - wexop's [CountryRoadCreature](https://thunderstore.io/c/lethal-company/p/Wexop/CountryRoadCreature/) [No standalone yet]
-- etherealemil's [UsualScrap](https://thunderstore.io/c/lethal-company/p/etherealemil/UsualScrap/) [No standalone yet] - 90% done, but needs more deathmessages
+- etherealemil's [UsualScrap](https://thunderstore.io/c/lethal-company/p/etherealemil/UsualScrap/) [No standalone yet] - Does not include capsules as of yet
 - NomnomAB's [Rolling Giant](https://thunderstore.io/c/lethal-company/p/NomnomAB/RollingGiant/)
 - SolidStone's [ShockwaveDroneEnemy](https://thunderstore.io/c/lethal-company/p/SolidStone/ShockwaveDroneEnemy/)
+- Entity378's [LethalDoorsFixed](https://thunderstore.io/c/lethal-company/p/Entity378/Lethal_Doors_Fixed/)
 
 Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-company/p/EliteMasterEric/CoronerMimics/) [[Standalone fix](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerMimicsFixEnUS/)]
 
@@ -35,6 +36,15 @@ Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-co
 - Slenderman
 - Tartarus
 - Surfaced
+- Wesley's Moons and Interiors
+- FacilityMeltdown
+- LethalRadiation
+- TheDoctor
+- LightEater
+- Soul Devourer
+- Scp939
+- TestAccountVariety (Hazards)
+- Piggy's Variety Mod (Tesla Gate, maybe for the guns too)
 
 If you have any other requests or suggestions for integrations, please let me know on the [discord](https://discord.com/channels/1168655651455639582/1419015562880876645) (part of Lethal Company Modding)
 
