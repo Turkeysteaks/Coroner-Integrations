@@ -1,4 +1,7 @@
 # Changelog
+## 0.4.1
+- Fixed error occuring with UsualScrap RosePatchEquip Postfix (thanks for reporting Satou)
+
 ## 0.4.0
 - Updated BepInEx dependency.
 - Integration with:

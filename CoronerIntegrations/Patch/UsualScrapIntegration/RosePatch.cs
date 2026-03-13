@@ -22,10 +22,11 @@ namespace CoronerIntegrations.Patch.UsualScrapIntegration
         {
             try
             {
-                if (player.isPlayerDead)
+                if (!player || !player.isPlayerDead)
                 {
-                    API.SetCauseOfDeath(player, UsualScrapSoftDep.ROSE);
+                    return;
                 }
+                API.SetCauseOfDeath(player, UsualScrapSoftDep.ROSE);
                 
             }
             catch(Exception e)
