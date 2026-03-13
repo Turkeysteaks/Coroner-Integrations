@@ -44,30 +44,27 @@ namespace CoronerIntegrations
 
         public ManualLogSource PluginLogger;
 
-        private void Awake()
+        internal Harmony Harmony { get; } = new Harmony(PluginInfo.PLUGIN_GUID);
+
+        public void Awake()
         {
             Instance = this;
-
             PluginLogger = Logger;
 
-            // Apply Harmony patches (if any exist)
-            Harmony harmony = new Harmony(PluginInfo.PLUGIN_GUID);
-            // harmony.PatchAll();
-
             // Plugin startup logic
-            PluginLogger.LogInfo($"Plugin {PluginInfo.PLUGIN_NAME} ({PluginInfo.PLUGIN_GUID}) is loaded!");
+            PluginLogger.LogInfo($"Plugin {PluginInfo.PLUGIN_NAME} ({PluginInfo.PLUGIN_GUID}) is loading...");
 
             PluginLogger.LogInfo($"Biodiversity Found: {BiodiversitySoftDep.enabled}");
             if (BiodiversitySoftDep.enabled)
             {
-                harmony.PatchAll(typeof(AloeBludgeonPatch));
-                harmony.PatchAll(typeof(AloeCrushPatch));
-                harmony.PatchAll(typeof(AloeSlapPatch));
-                harmony.PatchAll(typeof(CoilCrabPatch));
-                harmony.PatchAll(typeof(LandmineSpawnExplosionPatchPatch));
-                harmony.PatchAll(typeof(PrototaxPatch));
-                harmony.PatchAll(typeof(OgopogoPatch));
-                harmony.PatchAll(typeof(VerminPatch));
+                Harmony.PatchAll(typeof(AloeBludgeonPatch));
+                Harmony.PatchAll(typeof(AloeCrushPatch));
+                Harmony.PatchAll(typeof(AloeSlapPatch));
+                Harmony.PatchAll(typeof(CoilCrabPatch));
+                Harmony.PatchAll(typeof(LandmineSpawnExplosionPatchPatch));
+                Harmony.PatchAll(typeof(PrototaxPatch));
+                Harmony.PatchAll(typeof(OgopogoPatch));
+                Harmony.PatchAll(typeof(VerminPatch));
 
                 BiodiversitySoftDep.CoronerRegister();
             }
@@ -75,85 +72,79 @@ namespace CoronerIntegrations
             PluginLogger.LogInfo($"Scopophobia Found: {ScopophobiaSoftDep.enabled}");
             if (ScopophobiaSoftDep.enabled)
             {
-                harmony.PatchAll(typeof(KillPlayerAnimationPatch));
-
+                Harmony.PatchAll(typeof(KillPlayerAnimationPatch));
                 ScopophobiaSoftDep.CoronerRegister();
             }
 
             PluginLogger.LogInfo($"LethalSirenHead Found: {SirenHeadSoftDep.enabled}");
             if (SirenHeadSoftDep.enabled)
             {
-                harmony.PatchAll(typeof(SirenHeadEatPlayerPatch));
-
+                Harmony.PatchAll(typeof(SirenHeadEatPlayerPatch));
                 SirenHeadSoftDep.CoronerRegister();
             }
 
             PluginLogger.LogInfo($"The Cabinet Found: {TheCabinetSoftDep.enabled}");
             if (TheCabinetSoftDep.enabled)
             {
-                harmony.PatchAll(typeof(Patch.TheCabinetIntegration.KillPlayerPatch));
-
+                Harmony.PatchAll(typeof(Patch.TheCabinetIntegration.KillPlayerPatch));
                 TheCabinetSoftDep.CoronerRegister();
             }
 
             PluginLogger.LogInfo($"Locker Found: {LockerSoftDep.enabled}");
             if (LockerSoftDep.enabled)
             {
-                harmony.PatchAll(typeof(Patch.LockerIntegration.KillPlayerPatch));
-                harmony.PatchAll(typeof(ExplodePatch));
+                Harmony.PatchAll(typeof(Patch.LockerIntegration.KillPlayerPatch));
+                Harmony.PatchAll(typeof(ExplodePatch));
                 LockerSoftDep.CoronerRegister();
             }
 
             PluginLogger.LogInfo($"CountryRoadCreature Found: {CountryRoadCreatureSoftDep.enabled}");
             if (CountryRoadCreatureSoftDep.enabled)
             {
-                harmony.PatchAll(typeof(GrabAnimationPatch));
-                harmony.PatchAll(typeof(ParanoidAnimationPatch));
+                Harmony.PatchAll(typeof(GrabAnimationPatch));
+                Harmony.PatchAll(typeof(ParanoidAnimationPatch));
                 CountryRoadCreatureSoftDep.CoronerRegister();
             }
 
             PluginLogger.LogInfo($"LethalDoorsFixed Found: {LethalDoorsFixedSoftDep.enabled}");
             if (LethalDoorsFixedSoftDep.enabled)
             {
-                harmony.PatchAll(typeof(DoorInteractionPatch));
+                Harmony.PatchAll(typeof(DoorInteractionPatch));
                 LethalDoorsFixedSoftDep.CoronerRegister();
             }
 
             PluginLogger.LogInfo($"RollingGiant Found: {RollingGiantSoftDep.enabled}");
             if (RollingGiantSoftDep.enabled)
             {
-                harmony.PatchAll(typeof(OnCollideWithPlayerPatch));
+                Harmony.PatchAll(typeof(OnCollideWithPlayerPatch));
                 RollingGiantSoftDep.CoronerRegister();
             }
 
             PluginLogger.LogInfo($"ShockwaveDrone Found: {ShockwaveDroneSoftDep.enabled}");
             if (ShockwaveDroneSoftDep.enabled)
             {
-                harmony.PatchAll(typeof(ShockScanPatch));
-                harmony.PatchAll(typeof(ShockCreateExplosionPatch));
+                Harmony.PatchAll(typeof(ShockScanPatch));
+                Harmony.PatchAll(typeof(ShockCreateExplosionPatch));
                 ShockwaveDroneSoftDep.CoronerRegister();
             }
 
             PluginLogger.LogInfo($"UsualScrap Found: {UsualScrapSoftDep.enabled}");
             if (UsualScrapSoftDep.enabled)
             {
-                harmony.PatchAll(typeof(RosePatchEquip));
-                harmony.PatchAll(typeof(RosePatchPocket));
-
-                harmony.PatchAll(typeof(ScissorPatch));
-
-                harmony.PatchAll(typeof(RadioactiveCellPatch));
-
-
+                Harmony.PatchAll(typeof(RosePatchEquip));
+                Harmony.PatchAll(typeof(RosePatchPocket));
+                Harmony.PatchAll(typeof(ScissorPatch));
+                Harmony.PatchAll(typeof(RadioactiveCellPatch));
                 UsualScrapSoftDep.CoronerRegister();
             }
 
             PluginLogger.LogInfo($"LegendWeathers Found: {LegendWeathersSoftDep.Enabled}");
             if (LegendWeathersSoftDep.Enabled)
             {
-                harmony.PatchAll(typeof(LegendWeathersPatches));
-                LegendWeathersSoftDep.CoronerRegister();
+                LegendWeathersSoftDep.Register();
             }
+
+            PluginLogger.LogInfo($"Plugin {PluginInfo.PLUGIN_NAME} ({PluginInfo.PLUGIN_GUID}) is loaded!");
         }
     }
 }

@@ -25,8 +25,10 @@ namespace CoronerIntegrations.Patch.LegendWeathersIntegration
 
 
         [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]
-        public static void CoronerRegister()
+        public static void Register()
         {
+            Plugin.Instance.Harmony.PatchAll(typeof(LegendWeathersPatches));
+
             BLOOD_MOON_LIGHTNING = RegisterIntegrationKey("DeathWeatherLightningBloodMoon");
             MAJORA_MOON = RegisterIntegrationKey("DeathWeatherMajoraMoon");
             MOON_TEAR = RegisterIntegrationKey("DeathItemMoonTear");
