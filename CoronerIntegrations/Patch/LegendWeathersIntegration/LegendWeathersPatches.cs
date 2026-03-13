@@ -20,7 +20,7 @@ namespace CoronerIntegrations.Patch.LegendWeathersIntegration
                 PlayerControllerB? player = GetLocalPlayerInExplosionArea(__instance.targetFloorPosition, 7);
                 if (player != null)
                 {
-                    SetCauseOfDeath(player, LegendWeathersSoftDep.MOON_TEAR, forceOverride: true);
+                    SetCauseOfDeath(player, LegendWeathersSoftDep.MOON_TEAR);
                 }
             }
         }
@@ -37,7 +37,7 @@ namespace CoronerIntegrations.Patch.LegendWeathersIntegration
                 PlayerControllerB player = GameNetworkManager.Instance.localPlayerController;
                 if (player.isPlayerDead && !localPlayerKilledByMoonThisTime && !player.isInHangarShipRoom && !player.isInElevator && Vector3.Distance(__instance.outsideNodeEndPosition, player.transform.position) <= __instance.impact.transform.localScale.x * __instance.moonRadiusApprox * 0.9f)
                 {
-                    SetCauseOfDeath(player, LegendWeathersSoftDep.MAJORA_MOON, forceOverride: true);
+                    SetCauseOfDeath(player, LegendWeathersSoftDep.MAJORA_MOON);
                     localPlayerKilledByMoonThisTime = true;
                 }
             }
@@ -57,7 +57,7 @@ namespace CoronerIntegrations.Patch.LegendWeathersIntegration
         {
             if (__instance.IsOwner && !__instance.finishedAttaching && __instance.previousPlayerHeldBy != null && __instance.previousPlayerHeldBy.AllowPlayerDeath() && __instance.previousPlayerHeldBy.isPlayerDead)
             {
-                SetCauseOfDeath(__instance.previousPlayerHeldBy, LegendWeathersSoftDep.MAJORA_MASK, forceOverride: true);
+                SetCauseOfDeath(__instance.previousPlayerHeldBy, LegendWeathersSoftDep.MAJORA_MASK);
             }
         }
 
@@ -73,7 +73,7 @@ namespace CoronerIntegrations.Patch.LegendWeathersIntegration
             PlayerControllerB? player = GetLocalPlayerInExplosionArea(destination, 5);
             if (player != null)
             {
-                SetCauseOfDeath(player, LegendWeathersSoftDep.BLOOD_MOON_LIGHTNING, forceOverride: true);
+                SetCauseOfDeath(player, LegendWeathersSoftDep.BLOOD_MOON_LIGHTNING);
             }
         }
     }

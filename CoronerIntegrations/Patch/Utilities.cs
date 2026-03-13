@@ -21,12 +21,12 @@ namespace CoronerIntegrations.Patch
         }
 
 
-        public static void SetCauseOfDeath(PlayerControllerB player, AdvancedCauseOfDeath causeOfDeath, bool forceOverride = false)
+        public static void SetCauseOfDeath(PlayerControllerB player, AdvancedCauseOfDeath causeOfDeath, bool forceOverride = true)
         {
             AdvancedDeathTracker.SetCauseOfDeath(player, causeOfDeath, forceOverride);
         }
 
-        public static void SetCauseOfDeath(int playerId, AdvancedCauseOfDeath causeOfDeath, bool forceOverride = false)
+        public static void SetCauseOfDeath(int playerId, AdvancedCauseOfDeath causeOfDeath, bool forceOverride = true)
         {
             AdvancedDeathTracker.SetCauseOfDeath(playerId, causeOfDeath, forceOverride);
         }
