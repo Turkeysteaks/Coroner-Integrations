@@ -1,9 +1,10 @@
 ﻿using GameNetcodeStuff;
 using HarmonyLib;
 using LegendWeathers.BehaviourScripts;
+using LegendWeathers.Utils;
 using LegendWeathers.Weathers;
 using UnityEngine;
-using static CoronerIntegrations.Patch.Utils;
+using static CoronerIntegrations.Patch.Utilities;
 
 namespace CoronerIntegrations.Patch.LegendWeathersIntegration
 {
@@ -16,18 +17,10 @@ namespace CoronerIntegrations.Patch.LegendWeathersIntegration
         {
             if (!enable && !__instance.isHeld)
             {
-                Collider[] colliderArray = Physics.OverlapSphere(__instance.targetFloorPosition, radius: 7, 2621448, queryTriggerInteraction: QueryTriggerInteraction.Collide);
-                for (int i = 0; i < colliderArray.Length; i++)
+                PlayerControllerB? player = GetLocalPlayerInExplosionArea(__instance.targetFloorPosition, 7);
+                if (player != null)
                 {
-                    if (colliderArray[i].gameObject.layer == 3)
-                    {
-                        PlayerControllerB player = colliderArray[i].gameObject.GetComponent<PlayerControllerB>();
-                        if (player == null || !player.isPlayerDead || player != GameNetworkManager.Instance.localPlayerController)
-                        {
-                            continue;
-                        }
-                        SetCauseOfDeath(player, LegendWeathersSoftDep.MOON_TEAR, forceOverride: true);
-                    }
+                    SetCauseOfDeath(player, LegendWeathersSoftDep.MOON_TEAR, forceOverride: true);
                 }
             }
         }
@@ -42,7 +35,7 @@ namespace CoronerIntegrations.Patch.LegendWeathersIntegration
             if (__instance.impactStarted && __instance.impact != null)
             {
                 PlayerControllerB player = GameNetworkManager.Instance.localPlayerController;
-                if (player.isPlayerDead && !localPlayerKilledByMoonThisTime && !player.isInHangarShipRoom && !player.isInElevator && Vector3.Distance(__instance.outsideNodeEndPosition, player.positionOfDeath) <= __instance.impact.transform.localScale.x * __instance.moonRadiusApprox * 0.9f)
+                if (player.isPlayerDead && !localPlayerKilledByMoonThisTime && !player.isInHangarShipRoom && !player.isInElevator && Vector3.Distance(__instance.outsideNodeEndPosition, player.transform.position) <= __instance.impact.transform.localScale.x * __instance.moonRadiusApprox * 0.9f)
                 {
                     SetCauseOfDeath(player, LegendWeathersSoftDep.MAJORA_MOON, forceOverride: true);
                     localPlayerKilledByMoonThisTime = true;
@@ -55,6 +48,33 @@ namespace CoronerIntegrations.Patch.LegendWeathersIntegration
         public static void MajoraMoonRestartStatePatch()
         {
             localPlayerKilledByMoonThisTime = false;
+        }
+
+
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(MajoraMaskItem), "FinishAttachingMajoraMask")]
+        public static void MajoraMaskKillPlayerPatch(MajoraMaskItem __instance)
+        {
+            if (__instance.IsOwner && !__instance.finishedAttaching && __instance.previousPlayerHeldBy != null && __instance.previousPlayerHeldBy.AllowPlayerDeath() && __instance.previousPlayerHeldBy.isPlayerDead)
+            {
+                SetCauseOfDeath(__instance.previousPlayerHeldBy, LegendWeathersSoftDep.MAJORA_MASK, forceOverride: true);
+            }
+        }
+
+
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(Effects), "SpawnLightningBolt")]
+        public static void SpawnLightningBoltPatch(Vector3 destination, bool damage)
+        {
+            if (!damage)
+            {
+                return;
+            }
+            PlayerControllerB? player = GetLocalPlayerInExplosionArea(destination, 5);
+            if (player != null)
+            {
+                SetCauseOfDeath(player, LegendWeathersSoftDep.BLOOD_MOON_LIGHTNING, forceOverride: true);
+            }
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Coroner;
 using System.Runtime.CompilerServices;
-using static CoronerIntegrations.Patch.Utils;
+using static CoronerIntegrations.Patch.Utilities;
 
 namespace CoronerIntegrations.Patch.LegendWeathersIntegration
 {
