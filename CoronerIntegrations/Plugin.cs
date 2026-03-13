@@ -1,14 +1,11 @@
 ﻿using BepInEx;
-
-using HarmonyLib;
 using BepInEx.Logging;
-using Coroner;
-using CoronerIntegrations.Patch;
 using CoronerIntegrations.Patch.BiodiversityIntegration;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Aloe;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Critters;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Ogopogo;
 using CoronerIntegrations.Patch.CountryRoadCreatureIntegration;
+using CoronerIntegrations.Patch.LegendWeathersIntegration;
 using CoronerIntegrations.Patch.LethalDoorsFixedIntegration;
 using CoronerIntegrations.Patch.LockerIntegration;
 using CoronerIntegrations.Patch.RollingGiantIntegration;
@@ -17,6 +14,7 @@ using CoronerIntegrations.Patch.ShockwaveDroneIntegration;
 using CoronerIntegrations.Patch.SirenHeadIntegration;
 using CoronerIntegrations.Patch.TheCabinetIntegration;
 using CoronerIntegrations.Patch.UsualScrapIntegration;
+using HarmonyLib;
 
 namespace CoronerIntegrations
 {
@@ -39,12 +37,13 @@ namespace CoronerIntegrations
     [BepInDependency("nomnomab.rollinggiant", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("droneenemy", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("Entity378.LethalDoorsFixed", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("zigzag.legendweathers", BepInDependency.DependencyFlags.SoftDependency)]
     public class Plugin : BaseUnityPlugin
     {
         public static Plugin Instance { get; private set; }
 
         public ManualLogSource PluginLogger;
-        
+
         private void Awake()
         {
             Instance = this;
@@ -72,31 +71,31 @@ namespace CoronerIntegrations
 
                 BiodiversitySoftDep.CoronerRegister();
             }
-            
+
             PluginLogger.LogInfo($"Scopophobia Found: {ScopophobiaSoftDep.enabled}");
             if (ScopophobiaSoftDep.enabled)
             {
                 harmony.PatchAll(typeof(KillPlayerAnimationPatch));
-                
+
                 ScopophobiaSoftDep.CoronerRegister();
             }
-    
+
             PluginLogger.LogInfo($"LethalSirenHead Found: {SirenHeadSoftDep.enabled}");
             if (SirenHeadSoftDep.enabled)
             {
                 harmony.PatchAll(typeof(SirenHeadEatPlayerPatch));
-                
+
                 SirenHeadSoftDep.CoronerRegister();
             }
-            
+
             PluginLogger.LogInfo($"The Cabinet Found: {TheCabinetSoftDep.enabled}");
             if (TheCabinetSoftDep.enabled)
             {
                 harmony.PatchAll(typeof(Patch.TheCabinetIntegration.KillPlayerPatch));
-                
+
                 TheCabinetSoftDep.CoronerRegister();
             }
-            
+
             PluginLogger.LogInfo($"Locker Found: {LockerSoftDep.enabled}");
             if (LockerSoftDep.enabled)
             {
@@ -112,21 +111,21 @@ namespace CoronerIntegrations
                 harmony.PatchAll(typeof(ParanoidAnimationPatch));
                 CountryRoadCreatureSoftDep.CoronerRegister();
             }
-            
+
             PluginLogger.LogInfo($"LethalDoorsFixed Found: {LethalDoorsFixedSoftDep.enabled}");
             if (LethalDoorsFixedSoftDep.enabled)
             {
                 harmony.PatchAll(typeof(DoorInteractionPatch));
                 LethalDoorsFixedSoftDep.CoronerRegister();
             }
-            
+
             PluginLogger.LogInfo($"RollingGiant Found: {RollingGiantSoftDep.enabled}");
             if (RollingGiantSoftDep.enabled)
             {
                 harmony.PatchAll(typeof(OnCollideWithPlayerPatch));
                 RollingGiantSoftDep.CoronerRegister();
             }
-            
+
             PluginLogger.LogInfo($"ShockwaveDrone Found: {ShockwaveDroneSoftDep.enabled}");
             if (ShockwaveDroneSoftDep.enabled)
             {
@@ -134,19 +133,26 @@ namespace CoronerIntegrations
                 harmony.PatchAll(typeof(ShockCreateExplosionPatch));
                 ShockwaveDroneSoftDep.CoronerRegister();
             }
-            
+
             PluginLogger.LogInfo($"UsualScrap Found: {UsualScrapSoftDep.enabled}");
             if (UsualScrapSoftDep.enabled)
             {
                 harmony.PatchAll(typeof(RosePatchEquip));
                 harmony.PatchAll(typeof(RosePatchPocket));
-                
+
                 harmony.PatchAll(typeof(ScissorPatch));
-                
+
                 harmony.PatchAll(typeof(RadioactiveCellPatch));
-                
-                
+
+
                 UsualScrapSoftDep.CoronerRegister();
+            }
+
+            PluginLogger.LogInfo($"LegendWeathers Found: {LegendWeathersSoftDep.Enabled}");
+            if (LegendWeathersSoftDep.Enabled)
+            {
+                harmony.PatchAll(typeof(LegendWeathersPatches));
+                LegendWeathersSoftDep.CoronerRegister();
             }
         }
     }

@@ -38,104 +38,157 @@
       <HintPath>..\..\_utils\Librairies\Assembly-CSharp.dll</HintPath>
       <Publicize>true</Publicize>
     </Reference>
-        <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.2" PrivateAssets="all" />
+
+    <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.2" PrivateAssets="all" />
+    
     <Reference Include="Coroner">
       <Private>false</Private>
       <HintPath>..\..\_utils\Librairies\Coroner.dll</HintPath>
-        <Publicize>true</Publicize>
+      <Publicize>true</Publicize>
     </Reference>
       
-        <Reference Include="Biodiversity">
-          <Private>false</Private>
-          <HintPath>..\..\_utils\Librairies\com.github.biodiversitylc.Biodiversity.dll</HintPath>
-            <Publicize>true</Publicize>
-        </Reference>
-          <Reference Include="Scopophobia">
-              <Private>false</Private>
-              <HintPath>..\..\_utils\Librairies\Scopophobia.dll</HintPath>
-          </Reference>
+    <Reference Include="Biodiversity">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\com.github.biodiversitylc.Biodiversity.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="Scopophobia">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\Scopophobia.dll</HintPath>
+    </Reference>
+
     <Reference Include="Lethal_Doors">
       <Private>false</Private>
       <HintPath>..\..\_utils\Librairies\Lethal_Doors.dll</HintPath>
       <Publicize>true</Publicize>
     </Reference>
+
     <Reference Include="Lethal_Nuke">
       <Private>false</Private>
       <HintPath>..\..\_utils\Librairies\Lethal_Nuke.dll</HintPath>
       <Publicize>true</Publicize>
     </Reference>
-      <Reference Include="LethalSirenHead">
-          <Private>false</Private>
-          <HintPath>..\..\_utils\Librairies\LethalSirenHead.dll</HintPath>
-      </Reference>
-      <Reference Include="TheCabinet">
-          <Private>false</Private>
-          <HintPath>..\..\_utils\Librairies\VectorV.TheCabinet.dll</HintPath>
-      </Reference>
-      <Reference Include="Locker">
-          <Private>false</Private>
-          <HintPath>..\..\_utils\Librairies\Locker.dll</HintPath>
-          <Publicize>true</Publicize>
-      </Reference>
-      <Reference Include="CountryRoadCreature">
-          <Private>false</Private>
-          <HintPath>..\..\_utils\Librairies\CountryRoadCreature.dll</HintPath>
-      </Reference>
 
-      <Reference Include="RollingGiant">
-          <Private>false</Private>
-          <HintPath>..\..\_utils\Librairies\RollingGiant.dll</HintPath>
-      </Reference>
+    <Reference Include="LethalSirenHead">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\LethalSirenHead.dll</HintPath>
+    </Reference>
 
-      <Reference Include="DroneEnemy">
-          <Private>false</Private>
-          <HintPath>..\..\_utils\Librairies\DroneEnemy.dll</HintPath>
-          <Publicize>true</Publicize>
-      </Reference>
+    <Reference Include="TheCabinet">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\VectorV.TheCabinet.dll</HintPath>
+    </Reference>
 
-      <Reference Include="UsualScrap">
-          <Private>false</Private>
-          <HintPath>..\..\_utils\Librairies\UsualScrap.dll</HintPath>
-          <Publicize>true</Publicize>
-      </Reference>
-          
-      
+    <Reference Include="Locker">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\Locker.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="CountryRoadCreature">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\CountryRoadCreature.dll</HintPath>
+    </Reference>
+
+    <Reference Include="RollingGiant">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\RollingGiant.dll</HintPath>
+    </Reference>
+
+    <Reference Include="DroneEnemy">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\DroneEnemy.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="UsualScrap">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\UsualScrap.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="LegendWeathers">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\LegendWeathers.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="PremiumScraps">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\PremiumScraps.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="ChillaxScraps">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\ChillaxScraps.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="Zeldahu.JackensteinApparatus">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\Zeldahu.JackensteinApparatus.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="Zeldahu.LethalAnomalies">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\Zeldahu.LethalAnomalies.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="Zeldahu.ZeldaScraps">
+      <Private>false</Private>
+      <HintPath>..\..\_utils\Librairies\Zeldahu.ZeldaScraps.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
     <Reference Include="DissonanceVoip">
       <Private>false</Private>
       <HintPath>..\..\_utils\Librairies\DissonanceVoip.dll</HintPath>
     </Reference>
+
     <Reference Include="Facepunch Transport for Netcode for GameObjects">
       <Private>false</Private>
       <HintPath>..\..\_utils\Librairies\Facepunch Transport for Netcode for GameObjects.dll</HintPath>
     </Reference>
+
     <Reference Include="Facepunch.Steamworks.Win64">
       <Private>false</Private>
       <HintPath>..\..\_utils\Librairies\Facepunch.Steamworks.Win64.dll</HintPath>
     </Reference>
+
     <Reference Include="Unity.Collections">
       <Private>false</Private>
       <HintPath>..\..\_utils\Librairies\Unity.Collections.dll</HintPath>
     </Reference>
+
     <Reference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime">
       <Private>false</Private>
       <HintPath>..\..\_utils\Librairies\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll</HintPath>
     </Reference>
+
     <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
       <Private>false</Private>
       <HintPath>..\..\_utils\Librairies\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
     </Reference>
+
     <Reference Include="Unity.Netcode.Components">
       <Private>false</Private>
       <HintPath>..\..\_utils\Librairies\Unity.Netcode.Components.dll</HintPath>
     </Reference>
+
     <Reference Include="Unity.Netcode.Runtime">
       <Private>false</Private>
       <HintPath>..\..\_utils\Librairies\Unity.Netcode.Runtime.dll</HintPath>
     </Reference>
+
     <Reference Include="Unity.TextMeshPro">
       <Private>false</Private>
       <HintPath>..\..\_utils\Librairies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+
     <Reference Include="UnityEngine.UI">
       <Private>false</Private>
       <HintPath>..\..\_utils\Librairies\UnityEngine.UI.dll</HintPath>
