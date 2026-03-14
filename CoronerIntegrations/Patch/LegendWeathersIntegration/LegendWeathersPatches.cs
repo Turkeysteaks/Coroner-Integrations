@@ -55,7 +55,7 @@ namespace CoronerIntegrations.Patch.LegendWeathersIntegration
         [HarmonyPatch(typeof(MajoraMaskItem), "FinishAttachingMajoraMask")]
         public static void MajoraMaskKillPlayerPatch(MajoraMaskItem __instance)
         {
-            if (__instance.IsOwner && !__instance.finishedAttaching && __instance.previousPlayerHeldBy != null && __instance.previousPlayerHeldBy.AllowPlayerDeath() && __instance.previousPlayerHeldBy.isPlayerDead)
+            if (__instance.IsOwner && __instance.finishedAttaching && __instance.previousPlayerHeldBy != null && __instance.previousPlayerHeldBy.AllowPlayerDeath() && __instance.previousPlayerHeldBy.isPlayerDead)
             {
                 SetCauseOfDeath(__instance.previousPlayerHeldBy, LegendWeathersSoftDep.MAJORA_MASK);
             }
