@@ -21,12 +21,18 @@
         
         <!-- TN: Killed by the Majora Moon final explosion. -->
         <DeathWeatherMajoraMoon text="Obliterated by the Majora Moon." />
+        <DeathWeatherMajoraMoon text="Erased from existence." />
+        <DeathWeatherMajoraMoon text="Consumed by a destructive celestial body." />
+        <DeathWeatherMajoraMoon text="Obliterated from the surface of this world." />
 
         <!-- TN: Killed by a Moon Tear falling from the sky (rare). -->
-        <DeathItemMoonTear text="Killed by a falling moon's tear." />
+        <DeathItemMoonTear text="Crushed by a falling moon's tear." />
 
         <!-- TN: Killed by wearing the Majora's Mask. -->
         <DeathItemMajoraMask text="Got possessed by the Majora's Mask." />
+        <DeathItemMajoraMask text="Got wicked with a dark mask." />
+        <DeathItemMajoraMask text="Victim of the forbidden mask curse." />
+        <DeathItemMajoraMask text="Corrupted by Majora's spirit." />
 
     </strings>
 </base>
