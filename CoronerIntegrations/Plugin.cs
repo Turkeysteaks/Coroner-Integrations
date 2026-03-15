@@ -8,6 +8,7 @@ using CoronerIntegrations.Patch.CountryRoadCreatureIntegration;
 using CoronerIntegrations.Patch.LegendWeathersIntegration;
 using CoronerIntegrations.Patch.LethalDoorsFixedIntegration;
 using CoronerIntegrations.Patch.LockerIntegration;
+using CoronerIntegrations.Patch.PremiumScrapsIntegration;
 using CoronerIntegrations.Patch.RollingGiantIntegration;
 using CoronerIntegrations.Patch.ScopophobiaIntegration;
 using CoronerIntegrations.Patch.ShockwaveDroneIntegration;
@@ -27,6 +28,7 @@ namespace CoronerIntegrations
     }
 
     [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
+    [BepInDependency("com.elitemastereric.coroner", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.github.biodiversitylc.Biodiversity", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("wexop.country_road_creature", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.zealsprince.locker", BepInDependency.DependencyFlags.SoftDependency)]
@@ -38,6 +40,7 @@ namespace CoronerIntegrations
     [BepInDependency("droneenemy", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("Entity378.LethalDoorsFixed", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("zigzag.legendweathers", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("zigzag.premiumscraps", BepInDependency.DependencyFlags.SoftDependency)]
     public class Plugin : BaseUnityPlugin
     {
         public static Plugin Instance { get; private set; }
@@ -142,6 +145,12 @@ namespace CoronerIntegrations
             if (LegendWeathersSoftDep.Enabled)
             {
                 LegendWeathersSoftDep.Register();
+            }
+
+            PluginLogger.LogInfo($"PremiumScraps Found: {PremiumScrapsSoftDep.Enabled}");
+            if (PremiumScrapsSoftDep.Enabled)
+            {
+                PremiumScrapsSoftDep.Register();
             }
 
             PluginLogger.LogInfo($"Plugin {PluginInfo.PLUGIN_NAME} ({PluginInfo.PLUGIN_GUID}) is loaded!");

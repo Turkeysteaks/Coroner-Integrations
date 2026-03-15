@@ -21,11 +21,7 @@
         <DeathItemBomb text="Caught in a bomb explosion." />
         <DeathItemBomb text="Exploded by a pretty dangerous weapon." />
         <DeathItemBomb text="Tried to defuse a bomb." />
-        
-        <!-- TN: When the bomb explodes in an unstable manner. -->
-        <DeathItemBombUnstable text="Blown up by an unstable bomb." />
-        <DeathItemBombUnstable text="Was unlucky with the bomb." />
-        <DeathItemBombUnstable text="This explosion... Is it really only 3%?" />
+        <DeathItemBomb text="Was unlucky with the bomb." />
 
         <!-- TN: Exploded when the King's head grows (rare). -->
         <DeathItemTheKing text="Was blown up by The King." />
