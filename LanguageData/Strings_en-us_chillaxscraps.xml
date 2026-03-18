@@ -27,10 +27,6 @@
         <DeathItemDeathNote text="This one's name was written in the book of death." />
         <DeathItemDeathNote text="Killed by someone using the power of death." />
         
-        <!-- TN: Penalty by being unlucky and trying to kill someone else with the Death Note. -->
-        <DeathItemDeathNoteUnlucky text="Tried to kill someone with the Death Note." />
-        <DeathItemDeathNoteUnlucky text="Shouldn't have tried to use this book." />
-        
         <!-- TN: When the player is teleported to someone by an Emergency Meeting then dies shortly after. -->
         <DeathItemEmergencyMeeting text="Was called by a crewmate and died." />
         <DeathItemEmergencyMeeting text="The reported dead body was yours." />

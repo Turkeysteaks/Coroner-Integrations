@@ -4,8 +4,11 @@ using CoronerIntegrations.Patch.BiodiversityIntegration;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Aloe;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Critters;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Ogopogo;
+using CoronerIntegrations.Patch.ChillaxScrapsIntegration;
 using CoronerIntegrations.Patch.CountryRoadCreatureIntegration;
+using CoronerIntegrations.Patch.JackensteinApparatusIntegration;
 using CoronerIntegrations.Patch.LegendWeathersIntegration;
+using CoronerIntegrations.Patch.LethalAnomaliesIntegration;
 using CoronerIntegrations.Patch.LethalDoorsFixedIntegration;
 using CoronerIntegrations.Patch.LockerIntegration;
 using CoronerIntegrations.Patch.PremiumScrapsIntegration;
@@ -15,6 +18,7 @@ using CoronerIntegrations.Patch.ShockwaveDroneIntegration;
 using CoronerIntegrations.Patch.SirenHeadIntegration;
 using CoronerIntegrations.Patch.TheCabinetIntegration;
 using CoronerIntegrations.Patch.UsualScrapIntegration;
+using CoronerIntegrations.Patch.ZeldaScrapsIntegration;
 using HarmonyLib;
 
 namespace CoronerIntegrations
@@ -41,6 +45,10 @@ namespace CoronerIntegrations
     [BepInDependency("Entity378.LethalDoorsFixed", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("zigzag.legendweathers", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("zigzag.premiumscraps", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("zigzag.chillaxscraps", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("Zeldahu.JackensteinApparatus", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("Zeldahu.LethalAnomalies", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("Zeldahu.ZeldaScraps", BepInDependency.DependencyFlags.SoftDependency)]
     public class Plugin : BaseUnityPlugin
     {
         public static Plugin Instance { get; private set; }
@@ -151,6 +159,30 @@ namespace CoronerIntegrations
             if (PremiumScrapsSoftDep.Enabled)
             {
                 PremiumScrapsSoftDep.Register();
+            }
+
+            PluginLogger.LogInfo($"ChillaxScraps Found: {ChillaxScrapsSoftDep.Enabled}");
+            if (ChillaxScrapsSoftDep.Enabled)
+            {
+                ChillaxScrapsSoftDep.Register();
+            }
+
+            PluginLogger.LogInfo($"JackensteinApparatus Found: {JackensteinApparatusSoftDep.Enabled}");
+            if (JackensteinApparatusSoftDep.Enabled)
+            {
+                JackensteinApparatusSoftDep.Register();
+            }
+
+            PluginLogger.LogInfo($"LethalAnomalies Found: {LethalAnomaliesSoftDep.Enabled}");
+            if (LethalAnomaliesSoftDep.Enabled)
+            {
+                LethalAnomaliesSoftDep.Register();
+            }
+
+            PluginLogger.LogInfo($"ZeldaScraps Found: {ZeldaScrapsSoftDep.Enabled}");
+            if (ZeldaScrapsSoftDep.Enabled)
+            {
+                ZeldaScrapsSoftDep.Register();
             }
 
             PluginLogger.LogInfo($"Plugin {PluginInfo.PLUGIN_NAME} ({PluginInfo.PLUGIN_GUID}) is loaded!");
