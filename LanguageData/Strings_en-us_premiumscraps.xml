@@ -65,6 +65,7 @@
         <DeathItemGazpachoDrunk text="Was not able to take it anymore, died by tomatoes." />
 
         <!-- TN: Died by drinking the Gazpacho (unlucky explosion effect). -->
+        <DeathItemGazpachoUnlucky text="Drank the Gazpacho and blew up." />
         <DeathItemGazpachoUnlucky text="Tried to drink a hot tomato soup." />
 
         <!-- TN: Killed when trying to grab the Galvanized square steel at low health. -->
@@ -74,6 +75,7 @@
         <DeathItemSquareSteel text="Tried to build a 0.1 square meter house and failed." />
 
         <!-- TN: Died when spawning monsters with the Friendship ender. -->
+        <DeathItemFriendshipEnder text="Died after using the Friendship Ender." />
         <DeathItemFriendshipEnder text="Has ended all friendships." />
 
     </strings>

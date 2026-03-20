@@ -15,6 +15,14 @@ This mod will automatically detect if you have the relevant mods installed and i
 - NomnomAB's [Rolling Giant](https://thunderstore.io/c/lethal-company/p/NomnomAB/RollingGiant/)
 - SolidStone's [ShockwaveDroneEnemy](https://thunderstore.io/c/lethal-company/p/SolidStone/ShockwaveDroneEnemy/)
 - Entity378's [LethalDoorsFixed](https://thunderstore.io/c/lethal-company/p/Entity378/Lethal_Doors_Fixed/)
+- ZigZag's: Integrations created by ZigZag, thank you so much <3
+  - [ChillaxScraps](https://thunderstore.io/c/lethal-company/p/Zigzag/ChillaxScraps/)
+  - [LegendWeathers](https://thunderstore.io/c/lethal-company/p/Zigzag/LegendWeathers/)
+  - [PremiumScraps](https://thunderstore.io/c/lethal-company/p/Zigzag/PremiumScraps/)
+- Zeldahu's: Integrations created by ZigZag <3
+  - [LethalAnomalies](https://thunderstore.io/c/lethal-company/p/Zeldahu/LethalAnomalies/)
+  - [SCRAP's](https://thunderstore.io/c/lethal-company/p/Zeldahu/StupidCollectionOfRandomArticlesForPlayers/)
+  - [Jackenstein Apparatus](https://thunderstore.io/c/lethal-company/p/Zeldahu/JackensteinApparatus/)
 
 Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-company/p/EliteMasterEric/CoronerMimics/) [[Standalone fix](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerMimicsFixEnUS/)]
 
@@ -26,8 +34,8 @@ Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-co
 - LethalElementsBeta
 - ~~CountryRoadCreature~~
 - ~~Rolling Giant~~
-- LethalAnomalies
-- LegendWeathers
+- ~~LethalAnomalies~~
+- ~~LegendWeathers~~
 - Generic Scrap
 - ~~Usual scrap~~
 - HeavyItemsSCP
@@ -45,7 +53,7 @@ Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-co
 - Scp939
 - TestAccountVariety (Hazards)
 - Piggy's Variety Mod (Tesla Gate, maybe for the guns too)
-- Premium Scrap
+~~- Premium Scrap~~
 
 If you have any other requests or suggestions for integrations, please let me know on the [discord](https://discord.com/channels/1168655651455639582/1419015562880876645) (part of Lethal Company Modding)
 
@@ -53,4 +61,5 @@ If you have any other requests or suggestions for integrations, please let me kn
 ## Credits
 - EliteMasterEric: Creating Coroner & CoronerMimics (and making the amazing Coroner API)
 - ALL THE ORIGINAL MOD CREATORS
-- Turkeysteaks: Adapting CoronerMimics for all of these mods.
+- ZigZag: Creating the integrations for ChillaxScraps, LegendWeathers, PremiumScraps, LethalAnomalies and SCRAP's Scrap
+- Turkeysteaks: Adapting CoronerMimics for all other these mods.

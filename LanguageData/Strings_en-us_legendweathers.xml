@@ -33,6 +33,7 @@
         <DeathItemMajoraMask text="Got wicked with a dark mask." />
         <DeathItemMajoraMask text="Victim of the forbidden mask curse." />
         <DeathItemMajoraMask text="Corrupted by Majora's spirit." />
+        <DeathItemMajoraMask text="You shouldn't have done that..." />
 
     </strings>
 </base>

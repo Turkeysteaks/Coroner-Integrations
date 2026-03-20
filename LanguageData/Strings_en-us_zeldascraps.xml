@@ -17,6 +17,7 @@
         -->
 
         <!-- TN: Died in a rare explosion of a Christmas bauble. -->
+        <DeathItemChristmasBauble text="Exploded by a Christmas bauble." />
         <DeathItemChristmasBauble text="Exploded near a Christmas bauble." />
         
         <!-- TN: Killed by a Firework. -->

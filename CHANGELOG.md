@@ -1,4 +1,16 @@
 # Changelog
+## 0.5.0
+- ZigZag's:
+  - [ChillaxScraps](https://thunderstore.io/c/lethal-company/p/Zigzag/ChillaxScraps/)
+  - [LegendWeathers](https://thunderstore.io/c/lethal-company/p/Zigzag/LegendWeathers/)
+  - [PremiumScraps](https://thunderstore.io/c/lethal-company/p/Zigzag/PremiumScraps/)
+- Zeldahu's:
+  - [LethalAnomalies](https://thunderstore.io/c/lethal-company/p/Zeldahu/LethalAnomalies/)
+  - [SCRAP's](https://thunderstore.io/c/lethal-company/p/Zeldahu/StupidCollectionOfRandomArticlesForPlayers/)
+  - [Jackenstein Apparatus](https://thunderstore.io/c/lethal-company/p/Zeldahu/JackensteinApparatus/)
+ 
+Thank you ZigZag for all of these!!
+
 ## 0.4.1
 - Fixed error occuring with UsualScrap RosePatchEquip Postfix (thanks for reporting Satou)
 

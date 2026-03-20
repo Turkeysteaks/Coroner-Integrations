@@ -18,6 +18,7 @@
 
         <!-- TN: Killed by a lightning summoned by a Spark Tower. -->
         <DeathEnemySparkTower text="Struck by a Spark Tower lightning." />
+        <DeathEnemySparkTower text="Became a bright spark." />
         
         <!-- TN: Died in a Tourist explosion. -->
         <DeathEnemyTourist text="Killed by a Tourist explosion." />

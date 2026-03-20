@@ -39,11 +39,15 @@
         <!-- TN: When the Nokia hits the ground near a player a low health. -->
         <DeathItemNokia text="Got hit pretty hard by a Nokia." />
         <DeathItemNokia text="The Nokia was a bit too enthusiastic." />
+        <DeathItemNokia text="Nokia'd out." /> <!-- TN: Get it? -->
+        <DeathItemNokia text="Found out the legends were true about Nokia." />
         
         <!-- TN: Killed by Epona (Eyeless dog spawned by the Ocarina). -->
         <DeathItemOcarinaEpona text="Eaten by Epona." />
         <DeathItemOcarinaEpona text="Was kicked by Epona." />
         <DeathItemOcarinaEpona text="Killed by a very strange horse." />
+        <DeathItemOcarinaEpona text="Played the wrong tune too well." />
+        
         
         <!-- TN: When a player is swapped with someone by an Uno Reverse Card (or Uno Reverse Card DX) and dies shortly after. -->
         <DeathItemUnoReverse text="Died after being teleported by an Uno Reverse Card." />

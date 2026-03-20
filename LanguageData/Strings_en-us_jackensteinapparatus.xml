@@ -17,7 +17,8 @@
         -->
 
         <!-- TN: Killed by Jackenstein. -->
-        <DeathEnemyJackenstein text="YOUR TAKING TOO LONG" />
+        <DeathEnemyJackenstein text="Was killed by Jackenstein after taking the apparatus." />
+        <DeathEnemyJackenstein text="YOU'RE TAKING TOO LONG!" />
         
     </strings>
 </base>
