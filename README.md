@@ -54,6 +54,20 @@ Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-co
 - TestAccountVariety (Hazards)
 - Piggy's Variety Mod (Tesla Gate, maybe for the guns too)
 ~~- Premium Scrap~~
+- BigEyes
+- BigMouth
+- Haunted Harpist
+- Peepers
+- FacelessStalker
+- ImmortalSnail
+- men stalker
+- RollerEnemy
+- TheThing
+- The Rolling Chair
+- Mystery Button
+- Rats
+- SCP1507
+- BombCollar
 
 If you have any other requests or suggestions for integrations, please let me know on the [discord](https://discord.com/channels/1168655651455639582/1419015562880876645) (part of Lethal Company Modding)
 
