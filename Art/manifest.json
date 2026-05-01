@@ -5,6 +5,6 @@
   "description": "Provides integration between Coroner and many mods. See the README for the full list!",
   "dependencies": [
     "BepInEx-BepInExPack-5.4.2304",
-    "EliteMasterEric-Coroner-2.3.0"
+    "EliteMasterEric-Coroner-2.4.0"
   ]
 }
