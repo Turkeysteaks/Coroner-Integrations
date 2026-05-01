@@ -1,4 +1,11 @@
 # Changelog
+
+## 0.6.0
+- Updated Coroner to 2.4.0
+- Mimic fix has been removed, as Eric has made the necessary fix upstream!
+- Updated included DLLs of all mods and of LC (to v83)
+- Added:
+  - Ccode's [The Rolling Chair](https://thunderstore.io/c/lethal-company/p/Ccode_lang/The_Rolling_Chair/)
 ## 0.5.0
 - ZigZag's:
   - [ChillaxScraps](https://thunderstore.io/c/lethal-company/p/Zigzag/ChillaxScraps/)

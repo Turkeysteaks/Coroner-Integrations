@@ -17,6 +17,7 @@ using CoronerIntegrations.Patch.ScopophobiaIntegration;
 using CoronerIntegrations.Patch.ShockwaveDroneIntegration;
 using CoronerIntegrations.Patch.SirenHeadIntegration;
 using CoronerIntegrations.Patch.TheCabinetIntegration;
+using CoronerIntegrations.Patch.TheRollingChairIntegration;
 using CoronerIntegrations.Patch.UsualScrapIntegration;
 using CoronerIntegrations.Patch.ZeldaScrapsIntegration;
 using HarmonyLib;
@@ -37,6 +38,7 @@ namespace CoronerIntegrations
     [BepInDependency("wexop.country_road_creature", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.zealsprince.locker", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("Scopophobia", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("ccode.chair", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("Ccode.SirenHead", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("VectorV.TheCabinet", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("Emil.UsualScrap", BepInDependency.DependencyFlags.SoftDependency)]
@@ -92,6 +94,13 @@ namespace CoronerIntegrations
             {
                 Harmony.PatchAll(typeof(SirenHeadEatPlayerPatch));
                 SirenHeadSoftDep.CoronerRegister();
+            }
+            
+            PluginLogger.LogInfo($"The Rolling Chair Found: {RollingGiantSoftDep.enabled}");
+            if (TheRollingChairSoftDep.enabled)
+            {
+                Harmony.PatchAll(typeof(RollingChairCollidePatch));
+                TheRollingChairSoftDep.CoronerRegister();
             }
 
             PluginLogger.LogInfo($"The Cabinet Found: {TheCabinetSoftDep.enabled}");
