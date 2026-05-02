@@ -10,7 +10,7 @@
   - Erk's [ReviveCompany_Patched](https://thunderstore.io/c/lethal-company/p/Erk/ReviveCompany_Patched/) - should also work for the original OpJosMods' [ReviveCompany](https://thunderstore.io/c/lethal-company/p/OpJosMods/ReviveCompany/)
 
 
-- Removed [Herobrine]([Herobrine](https://thunderstore.io/c/lethal-company/p/Kittenji/Herobrine/)).
+- Removed [Herobrine](https://thunderstore.io/c/lethal-company/p/Kittenji/Herobrine/).
 
 
 ## 0.5.0
