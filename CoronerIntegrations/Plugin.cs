@@ -84,7 +84,7 @@ namespace CoronerIntegrations
                 BiodiversitySoftDep.CoronerRegister();
             }
             
-            PluginLogger.LogInfo($"BunkbedRevive Found: {BunkbedReviveSoftDep.enabled}");
+            PluginLogger.LogInfo($"BunkbedRevive_LegitsFork Found: {BunkbedReviveSoftDep.enabled}");
             if (BunkbedReviveSoftDep.enabled)
             {
                 Harmony.PatchAll(typeof(BunkbedRevivePlayerPatch));

@@ -13,7 +13,7 @@ public class BunkbedReviveSoftDep
         {
             if (_enabled == null)
             {
-                _enabled = BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey(""); //TODO
+                _enabled = BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("viviko.BunkbedRevive");
             }
 
             return (bool)_enabled;

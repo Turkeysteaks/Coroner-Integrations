@@ -22,7 +22,7 @@ namespace CoronerIntegrations.Patch.BunkbedReviveIntegration
 
             } catch  (Exception e)
             {
-                Plugin.Instance.PluginLogger.LogError("Error in BunkbedRevive BunkbedRevivePlayerPatch.Postfix: " + e);
+                Plugin.Instance.PluginLogger.LogError("Error in BunkbedRevive ReviveCompanyPatch.Postfix: " + e);
                 Plugin.Instance.PluginLogger.LogError(e.StackTrace);
             }
         }
