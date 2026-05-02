@@ -4,6 +4,7 @@ using CoronerIntegrations.Patch.BiodiversityIntegration;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Aloe;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Critters;
 using CoronerIntegrations.Patch.BiodiversityIntegration.Ogopogo;
+using CoronerIntegrations.Patch.BunkbedReviveIntegration;
 using CoronerIntegrations.Patch.ChillaxScrapsIntegration;
 using CoronerIntegrations.Patch.CountryRoadCreatureIntegration;
 using CoronerIntegrations.Patch.JackensteinApparatusIntegration;
@@ -35,6 +36,7 @@ namespace CoronerIntegrations
     [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
     [BepInDependency("com.elitemastereric.coroner", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.github.biodiversitylc.Biodiversity", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("viviko.BunkbedRevive", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("wexop.country_road_creature", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.zealsprince.locker", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("Scopophobia", BepInDependency.DependencyFlags.SoftDependency)]
@@ -80,6 +82,13 @@ namespace CoronerIntegrations
                 Harmony.PatchAll(typeof(VerminPatch));
 
                 BiodiversitySoftDep.CoronerRegister();
+            }
+            
+            PluginLogger.LogInfo($"BunkbedRevive Found: {BunkbedReviveSoftDep.enabled}");
+            if (BunkbedReviveSoftDep.enabled)
+            {
+                Harmony.PatchAll(typeof(BunkbedRevivePlayerPatch));
+                //No register because there is no cause of death
             }
 
             PluginLogger.LogInfo($"Scopophobia Found: {ScopophobiaSoftDep.enabled}");

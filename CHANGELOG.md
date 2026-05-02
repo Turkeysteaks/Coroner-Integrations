@@ -6,6 +6,8 @@
 - Updated included DLLs of all mods and of LC (to v83)
 - Added:
   - Ccode's [The Rolling Chair](https://thunderstore.io/c/lethal-company/p/Ccode_lang/The_Rolling_Chair/)
+  - LegitGamer's [BunkbedRevive](https://thunderstore.io/c/lethal-company/p/LegitGamer1017/BunkbedRevive_LegitsFork/)
+
 ## 0.5.0
 - ZigZag's:
   - [ChillaxScraps](https://thunderstore.io/c/lethal-company/p/Zigzag/ChillaxScraps/)

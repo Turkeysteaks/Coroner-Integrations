@@ -5,7 +5,9 @@ This mod will automatically detect if you have the relevant mods installed and i
 
 ## Integration list
 ### Completed:
-- Ccode's [SirenHead](https://thunderstore.io/c/lethal-company/p/Ccode_lang/SirenHead/) [[Standalone integration](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerSirenHead/)]
+- Ccode's:
+  - [SirenHead](https://thunderstore.io/c/lethal-company/p/Ccode_lang/SirenHead/) [[Standalone integration](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerSirenHead/)]
+  - [The Rolling Chair](https://thunderstore.io/c/lethal-company/p/Ccode_lang/The_Rolling_Chair/)
 - super_fucking_cool_and_badass_team_name / Monty's [biodiversity](https://thunderstore.io/c/lethal-company/p/super_fucking_cool_and_badass_team/Biodiversity/) [[Standalone integration](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerBiodiversity/)]
 - theunknowncod3r's [Scopophobia](https://thunderstore.io/c/lethal-company/p/theunknowncod3r/Scopophobia/) (aka Shy Guy / SCP-096) [[Standalone integration](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerScopophobia/)]
 - VectorV's [The Cabinet](https://thunderstore.io/c/lethal-company/p/Cabinet_crew/TheCabinet/) [[Standalone integration](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerTheCabinet/)]
@@ -23,8 +25,9 @@ This mod will automatically detect if you have the relevant mods installed and i
   - [LethalAnomalies](https://thunderstore.io/c/lethal-company/p/Zeldahu/LethalAnomalies/)
   - [SCRAP's](https://thunderstore.io/c/lethal-company/p/Zeldahu/StupidCollectionOfRandomArticlesForPlayers/)
   - [Jackenstein Apparatus](https://thunderstore.io/c/lethal-company/p/Zeldahu/JackensteinApparatus/)
+- Legit's [BunkbedRevive](https://thunderstore.io/c/lethal-company/p/LegitGamer1017/BunkbedRevive_LegitsFork/)
 
-Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-company/p/EliteMasterEric/CoronerMimics/) [[Standalone fix](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerMimicsFixEnUS/)]
+~~Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-company/p/EliteMasterEric/CoronerMimics/) [[Standalone fix](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerMimicsFixEnUS/)]~~ Eric has fixed this himself!
 
 ### Planned:
 - CodeRebirth
@@ -53,7 +56,7 @@ Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-co
 - Scp939
 - TestAccountVariety (Hazards)
 - Piggy's Variety Mod (Tesla Gate, maybe for the guns too)
-~~- Premium Scrap~~
+- ~~Premium Scrap~~
 - BigEyes
 - BigMouth
 - Haunted Harpist
@@ -63,7 +66,7 @@ Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-co
 - men stalker
 - RollerEnemy
 - TheThing
-- The Rolling Chair
+- ~~The Rolling Chair~~
 - Mystery Button
 - Rats
 - SCP1507

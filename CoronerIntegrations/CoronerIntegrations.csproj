@@ -50,7 +50,10 @@
       <HintPath>..\include\com.github.biodiversitylc.Biodiversity.dll</HintPath>
       <Publicize>true</Publicize>
     </Reference>
-
+    <Reference Include="BunkbedRevive">
+      <Private>false</Private>
+      <HintPath>..\include\BunkbedRevive.dll</HintPath>
+    </Reference>
     <Reference Include="Scopophobia">
       <Private>false</Private>
       <HintPath>..\include\Scopophobia.dll</HintPath>
