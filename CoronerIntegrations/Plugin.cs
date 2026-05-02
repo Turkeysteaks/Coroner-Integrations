@@ -13,6 +13,7 @@ using CoronerIntegrations.Patch.LethalAnomaliesIntegration;
 using CoronerIntegrations.Patch.LethalDoorsFixedIntegration;
 using CoronerIntegrations.Patch.LockerIntegration;
 using CoronerIntegrations.Patch.PremiumScrapsIntegration;
+using CoronerIntegrations.Patch.ReviveCompanyIntegration;
 using CoronerIntegrations.Patch.RollingGiantIntegration;
 using CoronerIntegrations.Patch.ScopophobiaIntegration;
 using CoronerIntegrations.Patch.ShockwaveDroneIntegration;
@@ -37,6 +38,8 @@ namespace CoronerIntegrations
     [BepInDependency("com.elitemastereric.coroner", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.github.biodiversitylc.Biodiversity", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("viviko.BunkbedRevive", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("Erksmit.LethalRevives", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("OpJosMod.ReviveCompany", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("wexop.country_road_creature", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.zealsprince.locker", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("Scopophobia", BepInDependency.DependencyFlags.SoftDependency)]
@@ -90,6 +93,14 @@ namespace CoronerIntegrations
                 Harmony.PatchAll(typeof(BunkbedRevivePlayerPatch));
                 //No register because there is no cause of death
             }
+            
+            PluginLogger.LogInfo($"ReviveCompany or Patched Found: {ReviveCompanySoftDep.enabled}"); //Should work for both Erk's and OpJos'
+            if (ReviveCompanySoftDep.enabled)
+            {
+                Harmony.PatchAll(typeof(ReviveCompanyPatch));
+                //No register because there is no cause of death
+            }
+
 
             PluginLogger.LogInfo($"Scopophobia Found: {ScopophobiaSoftDep.enabled}");
             if (ScopophobiaSoftDep.enabled)

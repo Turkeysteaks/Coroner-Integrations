@@ -7,6 +7,8 @@
 - Added:
   - Ccode's [The Rolling Chair](https://thunderstore.io/c/lethal-company/p/Ccode_lang/The_Rolling_Chair/)
   - LegitGamer's [BunkbedRevive](https://thunderstore.io/c/lethal-company/p/LegitGamer1017/BunkbedRevive_LegitsFork/)
+  - Erk's [ReviveCompany_Patched](https://thunderstore.io/c/lethal-company/p/Erk/ReviveCompany_Patched/) - should also work for the original OpJosMods' [ReviveCompany](https://thunderstore.io/c/lethal-company/p/OpJosMods/ReviveCompany/)
+
 
 ## 0.5.0
 - ZigZag's:
