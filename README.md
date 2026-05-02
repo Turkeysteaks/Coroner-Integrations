@@ -27,13 +27,14 @@ This mod will automatically detect if you have the relevant mods installed and i
   - [Jackenstein Apparatus](https://thunderstore.io/c/lethal-company/p/Zeldahu/JackensteinApparatus/)
 - Legit's [BunkbedRevive](https://thunderstore.io/c/lethal-company/p/LegitGamer1017/BunkbedRevive_LegitsFork/)
 - Erk's [ReviveCompany_Patched](https://thunderstore.io/c/lethal-company/p/Erk/ReviveCompany_Patched/) - should also work for the original OpJosMods' [ReviveCompany](https://thunderstore.io/c/lethal-company/p/OpJosMods/ReviveCompany/)
+- Kittenji's [Herobrine](https://thunderstore.io/c/lethal-company/p/Kittenji/Herobrine/) (finally)
 
 ~~Also includes a tiny fix for [CoronerMimics](https://thunderstore.io/c/lethal-company/p/EliteMasterEric/CoronerMimics/) [[Standalone fix](https://thunderstore.io/c/lethal-company/p/Turkeysteaks/CoronerMimicsFixEnUS/)]~~ Eric has fixed this himself!
 
 ### Planned:
 - CodeRebirth
 - ~~ShockwaveDrone~~
-- Herobrine (Likely next)
+- ~~Herobrine~~
 - MissileTurret
 - LethalElementsBeta
 - ~~CountryRoadCreature~~
