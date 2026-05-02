@@ -13,7 +13,7 @@ public class HerobrineSoftDep
         {
             if (_enabled == null)
             {
-                _enabled = BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("Kittenji.HerobrineMod"); //TODO
+                _enabled = BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("Kittenji.HerobrineMod");
             }
 
             return (bool)_enabled;
