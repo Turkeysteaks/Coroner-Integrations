@@ -118,7 +118,7 @@ namespace CoronerIntegrations
                 SirenHeadSoftDep.CoronerRegister();
             }
             
-            PluginLogger.LogInfo($"The Rolling Chair Found: {RollingGiantSoftDep.enabled}");
+            PluginLogger.LogInfo($"The Rolling Chair Found: {TheRollingChairSoftDep.enabled}");
             if (TheRollingChairSoftDep.enabled)
             {
                 Harmony.PatchAll(typeof(RollingChairCollidePatch));
