@@ -7,6 +7,7 @@ using CoronerIntegrations.Patch.BiodiversityIntegration.Ogopogo;
 using CoronerIntegrations.Patch.BunkbedReviveIntegration;
 using CoronerIntegrations.Patch.ChillaxScrapsIntegration;
 using CoronerIntegrations.Patch.CountryRoadCreatureIntegration;
+using CoronerIntegrations.Patch.HerobrineIntegration;
 using CoronerIntegrations.Patch.JackensteinApparatusIntegration;
 using CoronerIntegrations.Patch.LegendWeathersIntegration;
 using CoronerIntegrations.Patch.LethalAnomaliesIntegration;
@@ -49,6 +50,7 @@ namespace CoronerIntegrations
     [BepInDependency("Emil.UsualScrap", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("nomnomab.rollinggiant", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("droneenemy", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("Kittenji.HerobrineMod", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("Entity378.LethalDoorsFixed", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("zigzag.legendweathers", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("zigzag.premiumscraps", BepInDependency.DependencyFlags.SoftDependency)]
@@ -166,6 +168,15 @@ namespace CoronerIntegrations
                 Harmony.PatchAll(typeof(ShockScanPatch));
                 Harmony.PatchAll(typeof(ShockCreateExplosionPatch));
                 ShockwaveDroneSoftDep.CoronerRegister();
+            }
+            
+            PluginLogger.LogInfo($"HerobrineMod Found: {HerobrineSoftDep.enabled}");
+            if (HerobrineSoftDep.enabled)
+            {
+                Harmony.PatchAll(typeof(HerobrineKillPatch));
+                Harmony.PatchAll(typeof(MinecraftPlayerExplodePatch));
+                //
+                HerobrineSoftDep.CoronerRegister();
             }
 
             PluginLogger.LogInfo($"UsualScrap Found: {UsualScrapSoftDep.enabled}");
