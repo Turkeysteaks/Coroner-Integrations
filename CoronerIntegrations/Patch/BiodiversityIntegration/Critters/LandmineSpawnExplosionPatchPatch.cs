@@ -15,7 +15,7 @@ namespace CoronerIntegrations.Patch.BiodiversityIntegration.Critters
                 {
                     Plugin.Instance.PluginLogger.LogDebug(
                         $"Player {targetPlayer.playerClientId} was blown up by a CoilCrab! Setting cause of death...");
-                    Coroner.API.SetCauseOfDeath(targetPlayer, null);
+                    Coroner.API.ClearCauseOfDeath(targetPlayer); // Coroner 2.4.0
                     Coroner.API.SetCauseOfDeath(targetPlayer, BiodiversitySoftDep.COILCRAB_EXPLODE);
                 }
             }

@@ -21,7 +21,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Analyzers" Version="1.0.8" PrivateAssets="all" />
     <PackageReference Include="BepInEx.Core" Version="5.*" />
     <PackageReference Include="HarmonyX" Version="2.10.2" />
     <!-- <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" /> -->
@@ -38,10 +38,10 @@
       <HintPath>..\include\Assembly-CSharp.dll</HintPath>
       <Publicize>true</Publicize>
     </Reference>
-        <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.2" PrivateAssets="all" />
-    <Reference Include="Coroner">
+        <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.5.0-beta.2" PrivateAssets="all" />
+    <Reference Include="Coroner" Publicize="true">
       <Private>false</Private>
-      <HintPath>..\include\Coroner.dll</HintPath>
+      <HintPath>..\include\Coroner-publicized.dll</HintPath>
       <Publicize>true</Publicize>
     </Reference>
       
@@ -50,7 +50,16 @@
       <HintPath>..\include\com.github.biodiversitylc.Biodiversity.dll</HintPath>
       <Publicize>true</Publicize>
     </Reference>
-
+    <Reference Include="BunkbedRevive">
+      <Private>false</Private>
+      <HintPath>..\include\BunkbedRevive.dll</HintPath>
+    </Reference>
+    <Reference Include="LethalRevives">
+      <Private>false</Private>
+      <HintPath>..\include\Erksmit.LethalRevives.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+    
     <Reference Include="Scopophobia">
       <Private>false</Private>
       <HintPath>..\include\Scopophobia.dll</HintPath>
@@ -70,6 +79,12 @@
     <Reference Include="LethalSirenHead">
       <Private>false</Private>
       <HintPath>..\include\LethalSirenHead.dll</HintPath>
+    </Reference>
+    
+    <Reference Include="TheRollingChair">
+      <Private>false</Private>
+      <HintPath>..\include\TheRollingChair.dll</HintPath>
+      <Publicize>true</Publicize>
     </Reference>
 
     <Reference Include="TheCabinet">
@@ -97,6 +112,11 @@
       <Private>false</Private>
       <HintPath>..\include\DroneEnemy.dll</HintPath>
       <Publicize>true</Publicize>
+    </Reference>
+    
+    <Reference Include="HerobrineMod">
+      <Private>false</Private>
+      <HintPath>..\include\HerobrineMod.dll</HintPath>
     </Reference>
 
     <Reference Include="UsualScrap">

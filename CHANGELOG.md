@@ -1,4 +1,18 @@
 # Changelog
+
+## 0.6.0
+- Updated Coroner to 2.4.0
+- Mimic fix has been removed, as Eric has made the necessary fix upstream!
+- Updated included DLLs of all mods and of LC (to v83)
+- Added:
+  - Ccode's [The Rolling Chair](https://thunderstore.io/c/lethal-company/p/Ccode_lang/The_Rolling_Chair/)
+  - LegitGamer's [BunkbedRevive](https://thunderstore.io/c/lethal-company/p/LegitGamer1017/BunkbedRevive_LegitsFork/)
+  - Erk's [ReviveCompany_Patched](https://thunderstore.io/c/lethal-company/p/Erk/ReviveCompany_Patched/) - should also work for the original OpJosMods' [ReviveCompany](https://thunderstore.io/c/lethal-company/p/OpJosMods/ReviveCompany/)
+
+
+- Removed [Herobrine](https://thunderstore.io/c/lethal-company/p/Kittenji/Herobrine/).
+
+
 ## 0.5.0
 - ZigZag's:
   - [ChillaxScraps](https://thunderstore.io/c/lethal-company/p/Zigzag/ChillaxScraps/)
