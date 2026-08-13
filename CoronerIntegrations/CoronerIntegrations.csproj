@@ -114,6 +114,11 @@
       <Publicize>true</Publicize>
     </Reference>
     
+    <Reference Include="MissileTurret">
+      <Private>false</Private>
+      <HintPath>..\include\MissileTurret.dll</HintPath>
+    </Reference>
+    
     <Reference Include="HerobrineMod">
       <Private>false</Private>
       <HintPath>..\include\HerobrineMod.dll</HintPath>

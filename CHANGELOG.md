@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.7.0
+- Updated Coroner to 2.4.1
+- Added:
+  - Nikki's [MissileTurret](https://thunderstore.io/c/lethal-company/p/Nikki/MissileTurretsFork/) (sorry it took me so damn long)
+  - 
+
 ## 0.6.0
 - Updated Coroner to 2.4.0
 - Mimic fix has been removed, as Eric has made the necessary fix upstream!

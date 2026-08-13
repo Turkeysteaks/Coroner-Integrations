@@ -13,6 +13,7 @@ using CoronerIntegrations.Patch.LegendWeathersIntegration;
 using CoronerIntegrations.Patch.LethalAnomaliesIntegration;
 using CoronerIntegrations.Patch.LethalDoorsFixedIntegration;
 using CoronerIntegrations.Patch.LockerIntegration;
+using CoronerIntegrations.Patch.MissileTurretIntegration;
 using CoronerIntegrations.Patch.PremiumScrapsIntegration;
 using CoronerIntegrations.Patch.ReviveCompanyIntegration;
 using CoronerIntegrations.Patch.RollingGiantIntegration;
@@ -52,6 +53,7 @@ namespace CoronerIntegrations
     [BepInDependency("droneenemy", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("Kittenji.HerobrineMod", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("Entity378.LethalDoorsFixed", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("Finnerex.MissileTurret", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("zigzag.legendweathers", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("zigzag.premiumscraps", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("zigzag.chillaxscraps", BepInDependency.DependencyFlags.SoftDependency)]
@@ -153,6 +155,13 @@ namespace CoronerIntegrations
             {
                 Harmony.PatchAll(typeof(DoorInteractionPatch));
                 LethalDoorsFixedSoftDep.CoronerRegister();
+            }
+            
+            PluginLogger.LogInfo($"MissileTurrets Found: {MissileTurretSoftDep.enabled}");
+            if (MissileTurretSoftDep.enabled)
+            {
+                Harmony.PatchAll(typeof(MissileAIPatch));
+                MissileTurretSoftDep.CoronerRegister();
             }
 
             PluginLogger.LogInfo($"RollingGiant Found: {RollingGiantSoftDep.enabled}");
