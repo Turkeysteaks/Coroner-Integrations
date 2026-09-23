@@ -21,7 +21,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Analyzers" Version="1.0.8" PrivateAssets="all" />
     <PackageReference Include="BepInEx.Core" Version="5.*" />
     <PackageReference Include="HarmonyX" Version="2.10.2" />
     <!-- <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" /> -->
@@ -36,23 +36,35 @@
     <Reference Include="Assembly-CSharp">   
       <Private>false</Private>
       <HintPath>..\include\Assembly-CSharp.dll</HintPath>
+      <Publicize>true</Publicize>
     </Reference>
-        <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.2" PrivateAssets="all" />
-    <Reference Include="Coroner">
+        <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.5.0-beta.2" PrivateAssets="all" />
+    <Reference Include="Coroner" Publicize="true">
       <Private>false</Private>
       <HintPath>..\include\Coroner-publicized.dll</HintPath>
-        <Publicize>true</Publicize>
+      <Publicize>true</Publicize>
     </Reference>
       
-        <Reference Include="Biodiversity">
-          <Private>false</Private>
-          <HintPath>..\include\com.github.biodiversitylc.Biodiversity.dll</HintPath>
-            <Publicize>true</Publicize>
-        </Reference>
-          <Reference Include="Scopophobia">
-              <Private>false</Private>
-              <HintPath>..\include\Scopophobia.dll</HintPath>
-          </Reference>
+    <Reference Include="Biodiversity">
+      <Private>false</Private>
+      <HintPath>..\include\com.github.biodiversitylc.Biodiversity.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+    <Reference Include="BunkbedRevive">
+      <Private>false</Private>
+      <HintPath>..\include\BunkbedRevive.dll</HintPath>
+    </Reference>
+    <Reference Include="LethalRevives">
+      <Private>false</Private>
+      <HintPath>..\include\Erksmit.LethalRevives.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+    
+    <Reference Include="Scopophobia">
+      <Private>false</Private>
+      <HintPath>..\include\Scopophobia.dll</HintPath>
+    </Reference>
+
     <Reference Include="Lethal_Doors">
       <Private>false</Private>
       <HintPath>..\include\Lethal_Doors.dll</HintPath>
@@ -63,42 +75,92 @@
       <HintPath>..\include\Lethal_Nuke.dll</HintPath>
       <Publicize>true</Publicize>
     </Reference>
-      <Reference Include="LethalSirenHead">
-          <Private>false</Private>
-          <HintPath>..\include\LethalSirenHead.dll</HintPath>
-      </Reference>
-      <Reference Include="TheCabinet">
-          <Private>false</Private>
-          <HintPath>..\include\VectorV.TheCabinet.dll</HintPath>
-      </Reference>
-      <Reference Include="Locker">
-          <Private>false</Private>
-          <HintPath>..\include\Locker.dll</HintPath>
-          <Publicize>true</Publicize>
-      </Reference>
-      <Reference Include="CountryRoadCreature">
-          <Private>false</Private>
-          <HintPath>..\include\CountryRoadCreature.dll</HintPath>
-      </Reference>
 
-      <Reference Include="RollingGiant">
-          <Private>false</Private>
-          <HintPath>..\include\RollingGiant.dll</HintPath>
-      </Reference>
+    <Reference Include="LethalSirenHead">
+      <Private>false</Private>
+      <HintPath>..\include\LethalSirenHead.dll</HintPath>
+    </Reference>
+    
+    <Reference Include="TheRollingChair">
+      <Private>false</Private>
+      <HintPath>..\include\TheRollingChair.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
 
-      <Reference Include="DroneEnemy">
-          <Private>false</Private>
-          <HintPath>..\include\DroneEnemy.dll</HintPath>
-          <Publicize>true</Publicize>
-      </Reference>
+    <Reference Include="TheCabinet">
+      <Private>false</Private>
+      <HintPath>..\include\VectorV.TheCabinet.dll</HintPath>
+    </Reference>
 
-      <Reference Include="UsualScrap">
-          <Private>false</Private>
-          <HintPath>..\include\UsualScrap.dll</HintPath>
-          <Publicize>true</Publicize>
-      </Reference>
-          
-      
+    <Reference Include="Locker">
+      <Private>false</Private>
+      <HintPath>..\include\Locker.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="CountryRoadCreature">
+      <Private>false</Private>
+      <HintPath>..\include\CountryRoadCreature.dll</HintPath>
+    </Reference>
+
+    <Reference Include="RollingGiant">
+      <Private>false</Private>
+      <HintPath>..\include\RollingGiant.dll</HintPath>
+    </Reference>
+
+    <Reference Include="DroneEnemy">
+      <Private>false</Private>
+      <HintPath>..\include\DroneEnemy.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+    
+    <Reference Include="HerobrineMod">
+      <Private>false</Private>
+      <HintPath>..\include\HerobrineMod.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UsualScrap">
+      <Private>false</Private>
+      <HintPath>..\include\UsualScrap.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="LegendWeathers">
+      <Private>false</Private>
+      <HintPath>..\include\LegendWeathers.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="PremiumScraps">
+      <Private>false</Private>
+      <HintPath>..\include\PremiumScraps.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="ChillaxScraps">
+      <Private>false</Private>
+      <HintPath>..\include\ChillaxScraps.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="Zeldahu.JackensteinApparatus">
+      <Private>false</Private>
+      <HintPath>..\include\Zeldahu.JackensteinApparatus.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="Zeldahu.LethalAnomalies">
+      <Private>false</Private>
+      <HintPath>..\include\Zeldahu.LethalAnomalies.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
+    <Reference Include="Zeldahu.ZeldaScraps">
+      <Private>false</Private>
+      <HintPath>..\include\Zeldahu.ZeldaScraps.dll</HintPath>
+      <Publicize>true</Publicize>
+    </Reference>
+
     <Reference Include="DissonanceVoip">
       <Private>false</Private>
       <HintPath>..\include\DissonanceVoip.dll</HintPath>

@@ -1,4 +1,30 @@
 # Changelog
+
+## 0.6.0
+- Updated Coroner to 2.4.0
+- Mimic fix has been removed, as Eric has made the necessary fix upstream!
+- Updated included DLLs of all mods and of LC (to v83)
+- Added:
+  - Ccode's [The Rolling Chair](https://thunderstore.io/c/lethal-company/p/Ccode_lang/The_Rolling_Chair/)
+  - LegitGamer's [BunkbedRevive](https://thunderstore.io/c/lethal-company/p/LegitGamer1017/BunkbedRevive_LegitsFork/)
+  - Erk's [ReviveCompany_Patched](https://thunderstore.io/c/lethal-company/p/Erk/ReviveCompany_Patched/) - should also work for the original OpJosMods' [ReviveCompany](https://thunderstore.io/c/lethal-company/p/OpJosMods/ReviveCompany/)
+
+
+- Removed [Herobrine](https://thunderstore.io/c/lethal-company/p/Kittenji/Herobrine/).
+
+
+## 0.5.0
+- ZigZag's:
+  - [ChillaxScraps](https://thunderstore.io/c/lethal-company/p/Zigzag/ChillaxScraps/)
+  - [LegendWeathers](https://thunderstore.io/c/lethal-company/p/Zigzag/LegendWeathers/)
+  - [PremiumScraps](https://thunderstore.io/c/lethal-company/p/Zigzag/PremiumScraps/)
+- Zeldahu's:
+  - [LethalAnomalies](https://thunderstore.io/c/lethal-company/p/Zeldahu/LethalAnomalies/)
+  - [SCRAP's](https://thunderstore.io/c/lethal-company/p/Zeldahu/StupidCollectionOfRandomArticlesForPlayers/)
+  - [Jackenstein Apparatus](https://thunderstore.io/c/lethal-company/p/Zeldahu/JackensteinApparatus/)
+ 
+Thank you ZigZag for all of these!!
+
 ## 0.4.1
 - Fixed error occuring with UsualScrap RosePatchEquip Postfix (thanks for reporting Satou)
 
