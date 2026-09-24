@@ -16,13 +16,13 @@
         -->
 
         <!-- TN: Killed by The Rolling Chair. -->
-        <DeathEnemyRollingChair text="Killed by the Rolling Chair." />
-        <DeathEnemyRollingChair text="Asphyxiated by the Rolling Chair." />
-        <DeathEnemyRollingChair text="Was left hanging." />
-        <DeathEnemyRollingChair text="Kicked the chair." /> <!-- TN: Like kicking the bucket... but it's a chair -->
-        <DeathEnemyRollingChair text="Stalked by the Rolling Chair." />
-        <DeathEnemyRollingChair text="Couldn't outroll the Rolling Chair." />
-        <DeathEnemyRollingChair text="Hung by the Rolling Chair." />
+        <DeathEnemyRollingChair text="Tué par la Rolling Chair." />
+        <DeathEnemyRollingChair text="Asphyxié par la Rolling Chair." />
+        <DeathEnemyRollingChair text="Laissé sur le fil." />
+        <DeathEnemyRollingChair text="A cassé sa chaise." /> <!-- TN: Casser sa pipe, mais pour une chaise -->
+        <DeathEnemyRollingChair text="Traqué par la Rolling Chair." />
+        <DeathEnemyRollingChair text="N'a pas pu disrouler la Rolling Chair." />
+        <DeathEnemyRollingChair text="Pendu par la Rolling Chair." />
 
     </strings>
 </base>

@@ -16,11 +16,11 @@
         -->
 
         <!-- TN: Killed by Country Road Creature. -->
-        <DeathEnemyCountryRoadCreature text="Eaten by the Country Road Creature." />
-        <DeathEnemyCountryRoadCreature text="Should've taken the main road home." />
-        <DeathEnemyCountryRoadCreature text="Killed by The Creature." />
+        <DeathEnemyCountryRoadCreature text="Tué par la Country Road Creature." />
+        <DeathEnemyCountryRoadCreature text="Aurait du prendre la route principale." />
+        <DeathEnemyCountryRoadCreature text="Tué par La Créature." />
         
-        <DeathEnemyCountryRoadCreatureHead text="Killed by the Creature's Head." />
-        <DeathEnemyCountryRoadCreatureHead text="Killed by paranoia." />
+        <DeathEnemyCountryRoadCreatureHead text="Tué par La Tête de La Créature." />
+        <DeathEnemyCountryRoadCreatureHead text="Mort de paranoïa." />
     </strings>
 </base>

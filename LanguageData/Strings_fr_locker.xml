@@ -16,18 +16,18 @@
         -->
 
         <!-- TN: Killed by a Locker. -->
-        <DeathEnemyLocker text="Killed by a Locker." />
-        <DeathEnemyLocker text="Left with nothing but an eyeball." />
-        <DeathEnemyLocker text="Shoved into a locker." />
-        <DeathEnemyLocker text="Was too bright." />
-        <DeathEnemyLocker text="Scanned something they shouldn't've." />
-        <DeathEnemyLocker text="Taken by a locker." />
-        <DeathEnemyLocker text="Relived highschool." />
+        <DeathEnemyLocker text="Tué par un Locker." />
+        <DeathEnemyLocker text="Parti en ne laissant qu'un globe oculaire." />
+        <DeathEnemyLocker text="Piégé dans le placard." /> <!-- South Park reference. -->
+        <DeathEnemyLocker text="Était trop brillant." />
+        <DeathEnemyLocker text="A scanné quelque chose qu'il n'aurait pas dû." />
+        <DeathEnemyLocker text="Pris par un casier." />
+        <DeathEnemyLocker text="A revécu le lycée." />
         
         <!-- TN: Killed by two Lockers colliding and exploding. -->
-        <DeathEnemyLockerExplode text="Killed by a Locker explosion."/>
-        <DeathEnemyLockerExplode text="Caught in a blast from two lockers."/>
-        <DeathEnemyLockerExplode text="Got between two lockers."/>
-        <DeathEnemyLockerExplode text="Managed to kill a couple lockers."/>
+        <DeathEnemyLockerExplode text="Tué par une explosion de Locker."/>
+        <DeathEnemyLockerExplode text="Pris dans l'explosion de deux Lockers."/>
+        <DeathEnemyLockerExplode text="Est resté entre deux Lockers."/>
+        <DeathEnemyLockerExplode text="A réussi a tuer quelques Lockers."/>
     </strings>
 </base>

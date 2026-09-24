@@ -16,23 +16,23 @@
         -->
 
         <!-- TN: Killed by a Blood Moon lightning (very rare). -->
-        <DeathWeatherLightningBloodMoon text="Was struck by bloody lightning." />
+        <DeathWeatherLightningBloodMoon text="S'est fait frapper par la foudre de sang." />
         
         <!-- TN: Killed by the Majora Moon final explosion. -->
-        <DeathWeatherMajoraMoon text="Obliterated by the Majora Moon." />
-        <DeathWeatherMajoraMoon text="Erased from existence." />
-        <DeathWeatherMajoraMoon text="Consumed by a destructive celestial body." />
-        <DeathWeatherMajoraMoon text="Obliterated from the surface of this world." />
+        <DeathWeatherMajoraMoon text="Oblitéré par la lune de Majora." />
+        <DeathWeatherMajoraMoon text="Effacé de l'existence." />
+        <DeathWeatherMajoraMoon text="Consumé par un corps céleste destructif." />
+        <DeathWeatherMajoraMoon text="Oblitéré de la surface de ce monde." />
 
         <!-- TN: Killed by a Moon Tear falling from the sky (rare). -->
-        <DeathItemMoonTear text="Crushed by a falling moon's tear." />
+        <DeathItemMoonTear text="Écrasé par une larme de lune tombant du ciel." />
 
         <!-- TN: Killed by wearing the Majora's Mask. -->
-        <DeathItemMajoraMask text="Got possessed by the Majora's Mask." />
-        <DeathItemMajoraMask text="Got wicked with a dark mask." />
-        <DeathItemMajoraMask text="Victim of the forbidden mask curse." />
-        <DeathItemMajoraMask text="Corrupted by Majora's spirit." />
-        <DeathItemMajoraMask text="You shouldn't have done that..." />
+        <DeathItemMajoraMask text="A été possédé par le Masque de Majora." />
+        <DeathItemMajoraMask text="S'est fait maudire par un masque maléfique." />
+        <DeathItemMajoraMask text="Victime du sort du masque interdit." />
+        <DeathItemMajoraMask text="Corrompu par l'esprit de Majora." />
+        <DeathItemMajoraMask text="Tu n'aurais pas du faire ça..." />
 
     </strings>
 </base>

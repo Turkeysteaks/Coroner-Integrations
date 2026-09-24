@@ -16,11 +16,11 @@
         -->
 
         <!-- TN: Died in a rare explosion of a Christmas bauble. -->
-        <DeathItemChristmasBauble text="Exploded by a Christmas bauble." />
-        <DeathItemChristmasBauble text="Exploded near a Christmas bauble." />
+        <DeathItemChristmasBauble text="Explosé par une boule de Noël." />
+        <DeathItemChristmasBauble text="Explosé près d'une boule de Noël." />
         
         <!-- TN: Killed by a Firework. -->
-        <DeathItemFirework text="Killed by a Firework explosion." />
+        <DeathItemFirework text="Tué par l'explosion d'un Feu d'artifice." />
 
     </strings>
 </base>

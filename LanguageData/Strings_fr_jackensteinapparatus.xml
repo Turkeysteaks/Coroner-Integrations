@@ -16,8 +16,8 @@
         -->
 
         <!-- TN: Killed by Jackenstein. -->
-        <DeathEnemyJackenstein text="Was killed by Jackenstein after taking the apparatus." />
-        <DeathEnemyJackenstein text="YOU'RE TAKING TOO LONG!" />
+        <DeathEnemyJackenstein text="A été tué par Jackenstein après avoir pris l'Apparatus." />
+        <DeathEnemyJackenstein text="TU MET TRO LONGTEMPS !" /> <!-- TN: Based on a fantrad of Deltarune. -->
         
     </strings>
 </base>
