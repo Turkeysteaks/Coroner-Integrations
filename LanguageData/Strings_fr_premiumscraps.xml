@@ -16,66 +16,66 @@
         -->
 
         <!-- TN: When the bomb explodes. -->
-        <DeathItemBomb text="Blown up by a bomb." />
-        <DeathItemBomb text="Caught in a bomb explosion." />
-        <DeathItemBomb text="Exploded by a pretty dangerous weapon." />
-        <DeathItemBomb text="Tried to defuse a bomb." />
-        <DeathItemBomb text="Was unlucky with the bomb." />
+        <DeathItemBomb text="Explosé par une bombe." />
+        <DeathItemBomb text="Pris dans l'explosion d'une bombe" />
+        <DeathItemBomb text="Explosé par une arme plutôt dangereuse." />
+        <DeathItemBomb text="A tenté de désarmorcer une bombe." />
+        <DeathItemBomb text="A été malchanceux avec la bombe." />
 
         <!-- TN: Exploded when the King's head grows (rare). -->
-        <DeathItemTheKing text="Was blown up by The King." />
-        <DeathItemTheKing text="The King was a bit too nervous." />
-        <DeathItemTheKing text="I wonder what's for dinner...?" />
+        <DeathItemTheKing text="Explosé par le Roi." />
+        <DeathItemTheKing text="Le Roi était un peu trop nerveux." />
+        <DeathItemTheKing text="Je me demande ce qu'il y a pour dîner...?" />
 
         <!-- TN: Killed by another player using the Controller on you. -->
-        <DeathItemController text="Died while being controlled by a coworker." />
-        <DeathItemController text="Was controlled by a coworker." />
-        <DeathItemController text="Was trolled by someone using a special electronic device." />
-        <DeathItemController text="Was being moved by pure green electronic magic." />
+        <DeathItemController text="Mort sous le contrôle d'un collègue." />
+        <DeathItemController text="Était contrôlé par un collègue." />
+        <DeathItemController text="A été trollé par quelqu'un utilisant un appareil électronique spécial." />
+        <DeathItemController text="Déplacé par de la pure magie électronique verte." />
 
         <!-- TN: Unlucky penalty when killing another player with the Controller. -->
-        <DeathItemControllerUnlucky text="Exploded due to unlucky Controller usage." />
-        <DeathItemControllerUnlucky text="Why did you tried to kill your friend?" />
+        <DeathItemControllerUnlucky text="A malencontreusement explosé suite à l'utilisation d'un contrôleur." />
+        <DeathItemControllerUnlucky text="Pourquoi as-tu tenté de tuer ton ami ?" />
 
         <!-- TN: Exploded when using the Fake Airhorn (explosion effect). -->
-        <DeathItemFakeAirhornExplosion text="Exploded by using the Fake Airhorn." />
-        <DeathItemFakeAirhornExplosion text="This was not the real one..." />
-        <DeathItemFakeAirhornExplosion text="Killed by using an item?" />
+        <DeathItemFakeAirhornExplosion text="A explosé en utilisant le Faux Airhorn." />
+        <DeathItemFakeAirhornExplosion text="C'était pas le vrai..." />
+        <DeathItemFakeAirhornExplosion text="Mort en utilisant un objet ?" />
 
         <!-- TN: Exploded when using the Fake Airhorn (lightning effect). -->
-        <DeathItemFakeAirhornLightning text="Struck by lightning when using the Fake Airhorn." />
-        <DeathItemFakeAirhornLightning text="Struck by the powers of Zeus." />
-        <DeathItemFakeAirhornLightning text="Oh no, it was a fake item..." />
+        <DeathItemFakeAirhornLightning text="Frappé par la foudre en utilisant le Faux Airhorn." />
+        <DeathItemFakeAirhornLightning text="Frappé par les pouvoirs de Zeus." />
+        <DeathItemFakeAirhornLightning text="Oh non, c'était un faux objet..." />
 
         <!-- TN: Heart attack effect by getting the Death Hallucination when reading the Job application. -->
-        <DeathItemJobApplication text="Suffered a mysterious heart attack." />
-        <DeathItemJobApplication text="Got a heart attack." />
-        <DeathItemJobApplication text="Tried reading a dark paper from a forgotten facility." />
-        <DeathItemJobApplication text="Was not hired, is now jobless." />
+        <DeathItemJobApplication text="A subi une mystérieuse attaque cardiaque." />
+        <DeathItemJobApplication text="A fait une crise cardiaque." />
+        <DeathItemJobApplication text="A tenté de lire un document maudit d'un bâtiment abandonné." />
+        <DeathItemJobApplication text="N'a pas été embauché, est maintenant au chômage." />
 
         <!-- TN: Exploded by the Helm of Domination special unlucky effect. -->
-        <DeathItemHelmOfDomination text="Was exploded by the Helm of Domination." />
-        <DeathItemHelmOfDomination text="Got caught in the helmet's explosion." />
-        <DeathItemHelmOfDomination text="Is now wearing the Helm of the deads." />
+        <DeathItemHelmOfDomination text="Explosé par le Helm of Domination." />
+        <DeathItemHelmOfDomination text="Pris dans l'explosion du heaume." />
+        <DeathItemHelmOfDomination text="Est désormais coiffé du Heaume des morts." />
 
         <!-- TN: Died by drinking the Gazpacho (drunk effect). -->
-        <DeathItemGazpachoDrunk text="Drank the Gazpacho a bit too much." />
-        <DeathItemGazpachoDrunk text="Did not stand up after a sip of the spanish drink." />
-        <DeathItemGazpachoDrunk text="Was not able to take it anymore, died by tomatoes." />
+        <DeathItemGazpachoDrunk text="A bu un peu trop de Gazpacho." />
+        <DeathItemGazpachoDrunk text="Ne s'est pas levé après une gorgée de la boisson espagnole." />
+        <DeathItemGazpachoDrunk text="N'en pouvait plus, a été tué par des tomates." />
 
         <!-- TN: Died by drinking the Gazpacho (unlucky explosion effect). -->
-        <DeathItemGazpachoUnlucky text="Drank the Gazpacho and blew up." />
-        <DeathItemGazpachoUnlucky text="Tried to drink a hot tomato soup." />
+        <DeathItemGazpachoUnlucky text="A bu du Gazpacho et a explosé." />
+        <DeathItemGazpachoUnlucky text="A tenté de boire une soupe chaude a la tomate." />
 
         <!-- TN: Killed when trying to grab the Galvanized square steel at low health. -->
-        <DeathItemSquareSteel text="Tried to grab the Galvanized square steel at low health." />
-        <DeathItemSquareSteel text="With great power comes great responsabilities, but not for you." />
-        <DeathItemSquareSteel text="Crushed by the screws you borrowed from your aunt." />
-        <DeathItemSquareSteel text="Tried to build a 0.1 square meter house and failed." />
+        <DeathItemSquareSteel text="A tenté de prendre l'Acier carré galvanisé en étant bas en vie." />
+        <DeathItemSquareSteel text="De grands pouvoirs impliquent de grandes resposabilités, mais pas pour toi." />
+        <DeathItemSquareSteel text="Écrasé par les vis emprunté à sa tante." />
+        <DeathItemSquareSteel text="A tenté de construire une maison de 0.1 mètre carré et a échoué." />
 
         <!-- TN: Died when spawning monsters with the Friendship ender. -->
-        <DeathItemFriendshipEnder text="Died after using the Friendship Ender." />
-        <DeathItemFriendshipEnder text="Has ended all friendships." />
+        <DeathItemFriendshipEnder text="Mort après avoir utilisé le Friendship Ender." />
+        <DeathItemFriendshipEnder text="N'a plus aucun ami." />
 
     </strings>
 </base>

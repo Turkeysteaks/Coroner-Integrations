@@ -16,13 +16,13 @@
         -->
 
         <!-- TN: Killed by The Cabinet. -->
-        <DeathEnemyCabinet text="Killed by The Cabinet." />
-        <DeathEnemyCabinet text="Saw something they shouldn't." />
-        <DeathEnemyCabinet text="Eaten by a piece of furniture." />
-        <DeathEnemyCabinet text="Devoured by The Cabinet." />
-        <DeathEnemyCabinet text="Saw it moving." />
-        <DeathEnemyCabinet text="Witnessed what lies within." />
-        <DeathEnemyCabinet text="Got REALLY invested into the architecture of furniture." />
-        <DeathEnemyCabinet text="Found a new appreciation for quality carpentry." />
+        <DeathEnemyCabinet text="Tué par le Cabinet." />
+        <DeathEnemyCabinet text="A vu quelque chose qu'il n'aurait pas dû." />
+        <DeathEnemyCabinet text="Mangé par un meuble." />
+        <DeathEnemyCabinet text="Dévoré par le Cabinet." />
+        <DeathEnemyCabinet text="L'a vu bouger." />
+        <DeathEnemyCabinet text="Est témoin de ce qu'il y a dedans." />
+        <DeathEnemyCabinet text="Était VRAIMENT investi par la qualité du meuble." />
+        <DeathEnemyCabinet text="A appris à apprécier davantage la menuiserie de qualité." />
     </strings>
 </base>

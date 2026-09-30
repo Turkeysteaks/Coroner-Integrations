@@ -16,15 +16,15 @@
         -->
 
         <!-- TN: Killed by picking up/selecting the Rose. -->
-        <DeathSelectRose text="Killed by a Rose." />
-        <DeathSelectRose text="Every rose has it's thorn." />
-        <DeathSelectRose text="Every cowboy sings the same sad song." />
-        <DeathSelectRose text="A thousand thorns." />
-        <DeathSelectRose text="Being careless with spiky flowers." />
-        <DeathSelectRose text="Probably should have stopped spinning their scroll wheel." />
-        <DeathSelectRose text="Thorn in their side (or hand)." />
+        <DeathSelectRose text="Tué par la Rose." />
+        <DeathSelectRose text="Chaque rose a ses épines." />
+        <DeathSelectRose text="Tous les cowboys chantent le même air triste." />
+        <DeathSelectRose text="Un milliers d'épines." />
+        <DeathSelectRose text="A été imprudent avec les fleurs qui piquent." />
+        <DeathSelectRose text="Aurait du arrêté de jouer avec sa molette." />
+        <DeathSelectRose text="Une épine dans le pied (ou main)." />
         
-        <DeathScissorsRunning text="Ran with scissors." />
+        <DeathScissorsRunning text="A couru avec des ciseaux." />
         <!-- TODO       -->
         <DeathHoldRadioactiveCell text="Radiation."/>
         <!-- TODO       -->

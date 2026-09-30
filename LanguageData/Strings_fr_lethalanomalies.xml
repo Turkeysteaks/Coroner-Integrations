@@ -16,14 +16,14 @@
         -->
 
         <!-- TN: Killed by a lightning summoned by a Spark Tower. -->
-        <DeathEnemySparkTower text="Struck by a Spark Tower lightning." />
-        <DeathEnemySparkTower text="Became a bright spark." />
+        <DeathEnemySparkTower text="Frappé par la foudre d'une Antenne électrique." /> <!-- TN: How do you translate Spark Tower ?. -->
+        <DeathEnemySparkTower text="Est devenu une belle étincelle." />
         
         <!-- TN: Died in a Tourist explosion. -->
-        <DeathEnemyTourist text="Killed by a Tourist explosion." />
+        <DeathEnemyTourist text="Tué par l'explosion d'un Touriste." />
         
         <!-- TN: Died in a Tour Bus explosion. -->
-        <DeathEnemyTourBus text="Killed by a Tour Bus explosion." />
+        <DeathEnemyTourBus text="Tué par l'explosion d'un Bus Touristique." />
         
     </strings>
 </base>

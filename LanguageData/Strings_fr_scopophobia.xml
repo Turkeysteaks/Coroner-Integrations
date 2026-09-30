@@ -16,13 +16,13 @@
         -->
 
         <!-- TN: Killed by Shy Guy. -->
-        <DeathEnemyShyGuy text="Killed by SCP-096." />
-        <DeathEnemyShyGuy text="Killed by Shy Guy." />
-        <DeathEnemyShyGuy text="Found a lovely painting of a mountain." /> <!-- TN: A reference to Incident 096-1-A -->
-        <DeathEnemyShyGuy text="Four pixels. Four fucking pixels." /> <!-- TN: A reference to Incident 096-1-A -->
-        <DeathEnemyShyGuy text="Ripped apart by 096." />
-        <DeathEnemyShyGuy text="Tried to comfort a man in emotional distress." />
-        <DeathEnemyShyGuy text="Saw too much." />
-        <DeathEnemyShyGuy text="Looked towards the screams." />
+        <DeathEnemyShyGuy text="Tué par SCP-096." />
+        <DeathEnemyShyGuy text="Tué par le Shy Guy." />
+        <DeathEnemyShyGuy text="A trouvé une jolie peinture d'une montagne." /> <!-- TN: A reference to Incident 096-1-A -->
+        <DeathEnemyShyGuy text="Quatre pixels. Quatre putains de pixels." /> <!-- TN: A reference to Incident 096-1-A -->
+        <DeathEnemyShyGuy text="Déchiqueté par 096." />
+        <DeathEnemyShyGuy text="A tenté de consoler un homme en détresse." />
+        <DeathEnemyShyGuy text="En a trop vu." />
+        <DeathEnemyShyGuy text="A regardé du côté des pleurs." />
     </strings>
 </base>

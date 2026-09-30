@@ -16,14 +16,14 @@
         -->
 
         <!-- TN: Killed by The Rolling Giant. -->
-        <DeathEnemyRollingGiant text="Killed by the Rolling Giant." />
-        <DeathEnemyRollingGiant text="Stalked by the Rolling Giant." />
-        <DeathEnemyRollingGiant text="Spent too much time in Valley View Mall." /> <!-- TN: Reference to The Oldest View -->
-        <DeathEnemyRollingGiant text="Couldn't outrun the Rolling Giant." />
-        <DeathEnemyRollingGiant text="Couldn't outroll the Rolling Giant." />
-        <DeathEnemyRollingGiant text="Caught Dallas nostalgia." /> <!-- TN: Reference to The Oldest View -->
-        <DeathEnemyRollingGiant text="Never made it out of the mall." /> <!-- TN: Reference to The Oldest View -->
-        <DeathEnemyRollingGiant text="Steamrolled by the Rolling Giant." />
+        <DeathEnemyRollingGiant text="Tué par le Rolling Giant." />
+        <DeathEnemyRollingGiant text="Traqué par le Rolling Giant." />
+        <DeathEnemyRollingGiant text="A passé trop de temps dans le Valley View Mall." /> <!-- TN: Reference to The Oldest View -->
+        <DeathEnemyRollingGiant text="N'a pas pu distancer le Rolling Giant." />
+        <DeathEnemyRollingGiant text="S'est fait rouler dessus par le Rolling Giant." />
+        <DeathEnemyRollingGiant text="S'est pris de nostalgie pour Dallas." /> <!-- TN: Reference to The Oldest View -->
+        <DeathEnemyRollingGiant text="N'a jamais pu sortir du centre commercial." /> <!-- TN: Reference to The Oldest View -->
+        <DeathEnemyRollingGiant text="Écrasé par le Rolling Giant." />
 
     </strings>
 </base>

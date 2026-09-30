@@ -16,25 +16,25 @@
         -->
 
         <!-- TN: Killed by LethalDoors closing on them. -->
-        <DeathLethalDoors text="Crushed by the ship doors." />
-        <DeathLethalDoors text="Caught their fingers in the doors." />
-        <DeathLethalDoors text="Shut between the doors." />
-        <DeathLethalDoors text="Commit suicide in the most basic way." />
-        <DeathLethalDoors text="Wished the company invested in door sensors." />
-        <DeathLethalDoors text="Thought they were better than Tatum." /> <!-- TN: Reference to Scream, where a character is killed by a garage door -->
-        <DeathLethalDoors text="Was just as aware of their surroundings as Raoul." /> <!-- TN: Reference to Panic Room, where the character gets their hand crushed by a sliding door -->
-        <DeathLethalDoors text="Split in two by the ship doors." />
-        <DeathLethalDoors text="Looked too much like a monster that must be kept out." />
-        <DeathLethalDoors text="Got crushed in the doors by a nervous teammate." />
-        <DeathLethalDoors text="Split in two like a lawyer." /> <!-- TN: Reference to THIR13EN Ghosts, where this happens. -->
-        <DeathLethalDoors text="Wasn't a very good doorstop." />
-        <DeathLethalDoors text="Was SO close to making it into the ship." />
-        <DeathLethalDoors text="Couldn't fit through the doorway." />
-        <DeathLethalDoors text="Couldn't wait to press the red button." />
-        <DeathLethalDoors text="Trapped by the closing doors." />
-        <DeathLethalDoors text="Rode on the Storm, CRUSHED by The Doors." /> <!-- TN: (Bad) Reference to The Doors (band) -->
-
-
+        <DeathLethalDoors text="Écrasé par les portes du vaisseau." />
+        <DeathLethalDoors text="A coincé ses doigts dans la porte." />
+        <DeathLethalDoors text="Coincé entre les portes." />
+        <DeathLethalDoors text="S'est suicidé de la manière la plus basique." />
+        <DeathLethalDoors text="Souhaiterait que la Company investisse dans un capteur de porte." />
+        <DeathLethalDoors text="S'est pensé meilleur que Tatum." /> <!-- TN: Reference to Scream, where a character is killed by a garage door -->
+        <DeathLethalDoors text="Était tout aussi conscient de son environnement que Raoul." /> <!-- TN: Reference to Panic Room, where the character gets their hand crushed by a sliding door -->
+        <DeathLethalDoors text="Séparé en deux par la porte du vaisseau." />
+        <DeathLethalDoors text="Ressemblait trop aux monstres sensé rester dehors." />
+        <DeathLethalDoors text="S'est fait écraser dans la porte par un collègue nerveux." />
+        <DeathLethalDoors text="Séparé en deux comme un avocat." /> <!-- TN: Reference to THIR13EN Ghosts, where this happens. -->
+        <DeathLethalDoors text="N'était pas un bon cale-porte." />
+        <DeathLethalDoors text="Était SI proche de rentrer dans le vaisseau." />
+        <DeathLethalDoors text="Ne rentrait pas dans la porte." />
+        <DeathLethalDoors text="Était impatient d'appuyer sur le bouton rouge." />
+        <DeathLethalDoors text="Piégé par la fermeture de la porte." />
+        <DeathLethalDoors text="Est un grand fan de The Doors." /> <!-- TN: (Bad) Reference to The Doors (band). Couldn't translate the joke in French, adapted the joke -->
+        <DeathLethalDoors text="A mis ses mains dans la porte." /> <!-- TN: Reference to Serge the Rabbit (french mascot) -->
+        <DeathLethalDoors text="S'est fait pincer très fort." /> <!-- TN: Reference to Serge the Rabbit (french mascot) -->
 
     </strings>
 </base>
