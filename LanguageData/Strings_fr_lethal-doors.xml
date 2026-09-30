@@ -20,7 +20,7 @@
         <DeathLethalDoors text="A coincé ses doigts dans la porte." />
         <DeathLethalDoors text="Coincé entre les portes." />
         <DeathLethalDoors text="S'est suicidé de la manière la plus basique." />
-        <DeathLethalDoors text="Souhaitait que la Company investisse dans un capteur de porte." />
+        <DeathLethalDoors text="Souhaiterait que la Company investisse dans un capteur de porte." />
         <DeathLethalDoors text="S'est pensé meilleur que Tatum." /> <!-- TN: Reference to Scream, where a character is killed by a garage door -->
         <DeathLethalDoors text="Était tout aussi conscient de son environnement que Raoul." /> <!-- TN: Reference to Panic Room, where the character gets their hand crushed by a sliding door -->
         <DeathLethalDoors text="Séparé en deux par la porte du vaisseau." />
@@ -33,8 +33,8 @@
         <DeathLethalDoors text="Était impatient d'appuyer sur le bouton rouge." />
         <DeathLethalDoors text="Piégé par la fermeture de la porte." />
         <DeathLethalDoors text="Est un grand fan de The Doors." /> <!-- TN: (Bad) Reference to The Doors (band). Couldn't translate the joke in French, adapted the joke -->
-
-
+        <DeathLethalDoors text="A mis ses mains dans la porte." /> <!-- TN: Reference to Serge the Rabbit (french mascot) -->
+        <DeathLethalDoors text="S'est fait pincer très fort." /> <!-- TN: Reference to Serge the Rabbit (french mascot) -->
 
     </strings>
 </base>

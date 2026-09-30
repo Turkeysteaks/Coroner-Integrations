@@ -21,7 +21,7 @@
         <DeathEnemyRollingChair text="Laissé sur le fil." />
         <DeathEnemyRollingChair text="A cassé sa chaise." /> <!-- TN: Casser sa pipe, mais pour une chaise -->
         <DeathEnemyRollingChair text="Traqué par la Rolling Chair." />
-        <DeathEnemyRollingChair text="N'a pas pu disrouler la Rolling Chair." />
+        <DeathEnemyRollingChair text="Roulé desus par la Rolling Chair." />
         <DeathEnemyRollingChair text="Pendu par la Rolling Chair." />
 
     </strings>

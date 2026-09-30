@@ -60,7 +60,7 @@
 
         <!-- TN: Died by drinking the Gazpacho (drunk effect). -->
         <DeathItemGazpachoDrunk text="A bu un peu trop de Gazpacho." />
-        <DeathItemGazpachoDrunk text="Ne s'est pas levé après une gorgéd de la boisson espagnole." />
+        <DeathItemGazpachoDrunk text="Ne s'est pas levé après une gorgée de la boisson espagnole." />
         <DeathItemGazpachoDrunk text="N'en pouvait plus, a été tué par des tomates." />
 
         <!-- TN: Died by drinking the Gazpacho (unlucky explosion effect). -->

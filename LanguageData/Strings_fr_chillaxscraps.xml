@@ -30,6 +30,7 @@
         <DeathItemEmergencyMeeting text="A été appelé par un crewmate et est mort." />
         <DeathItemEmergencyMeeting text="Le cadavre signalé était le tien." />
         <DeathItemEmergencyMeeting text="A été tué par l'imposteur pendant un meeting." />
+        <DeathItemEmergencyMeeting text="N'est pas l'imposteur." />
         
         <!-- TN: Died when using Freddy Fazbear too many times. -->
         <DeathItemFreddyFazbear text="A été tué par Freddy Fazbear." />
@@ -40,18 +41,20 @@
         <DeathItemNokia text="Le Nokia était un peu trop enthousiaste." />
         <DeathItemNokia text="S'est fait Nokia." /> <!-- TN: Get it? -->
         <DeathItemNokia text="A découvert que le mythe du Nokia était fondé." />
+        <DeathItemNokia text="Le Nokia fonctionne encore." />
         
         <!-- TN: Killed by Epona (Eyeless dog spawned by the Ocarina). -->
         <DeathItemOcarinaEpona text="Dévoré par Epona." />
         <DeathItemOcarinaEpona text="S'est pris un coup de sabot d'Epona." />
         <DeathItemOcarinaEpona text="Tué par un cheval très étrange." />
-        <DeathItemOcarinaEpona text="A joué le mauvais son très bien." />
+        <DeathItemOcarinaEpona text="A très bien joué le mauvais son." />
         
         <!-- TN: When a player is swapped with someone by an Uno Reverse Card (or Uno Reverse Card DX) and dies shortly after. -->
         <DeathItemUnoReverse text="Mort après avoir été téléporté par une carte Uno Reverse." />
-        <DeathItemUnoReverse text="A été échangé avec quelqu'un et est mort." />
+        <DeathItemUnoReverse text="A été échangé avec quelqu'un, puis est mort." />
         <DeathItemUnoReverse text="S'est fait mélanger." />
         <DeathItemUnoReverse text="S'est fait inverser par une carte." />
+        <DeathItemUnoReverse text="S'est pris un contre-uno." />
 
     </strings>
 </base>
